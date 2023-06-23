@@ -1,9 +1,11 @@
 import Header from "@/src/components/global/Header";
 import { Container } from "@/src/styles/pages/app";
-import { Banner, Main } from "./styles";
+import { Main } from "./styles";
 
-import banner from '../../assets/banner.png'
 import ExecutivosBanner from "@/src/components/global/Banner";
+
+import contactUs from '../../assets/contactUs.jpg'
+import Image from "next/image";
 
 export default function Home() {
    return(
@@ -11,6 +13,14 @@ export default function Home() {
          <Header />
          <Main>
             <ExecutivosBanner />
+            <section>
+               <Image 
+                  src={contactUs}
+                  width={805}
+                  height={262}
+                  alt=""
+               />
+            </section>
          </Main>
       </Container>
    )
