@@ -1,10 +1,6 @@
 import { styled } from "@stitches/react";
 import Image from "next/image";
 
-export const Main = styled('main', {
-   
-})
-
 export const Banner = styled(Image, {
    width: '100%',
    height: 'auto',
