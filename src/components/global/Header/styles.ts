@@ -1,4 +1,5 @@
 import { styled } from "@stitches/react";
+import Image from "next/image";
 
 export const HeaderWrapper = styled('header', {
 
@@ -18,44 +19,123 @@ export const LogoAndLogin = styled('div', {
 
    div: {
       display: 'flex',
+      alignItems: 'center',
       gap: '1rem',
 
       marginRight: '4rem',
    }
 })
 
-export const Navbar = styled('div', {
-   display: 'flex',
-   justifyContent: 'space-between',
-   
-   backgroundColor: '$yellow',
-   padding: '0.8rem',
+export const MenuButton = styled(Image, {
+   display: 'none',
+
+   variants: {
+      windowSize: {
+         'bp1': {
+
+         },
+         'bp2': {
+
+         },
+         'bp3': {
+            display: 'inline',
+         }
+      },
+      onClickMenuButton: {
+         true: {
+            
+         },
+         false: {
+
+         }
+      }
+   },
 })
 
-export const Nav = styled('nav', {
-   marginLeft: '3rem',
-   
+
+export const Navbar = styled('nav', {
+   display: 'flex',
+   justifyContent: 'space-between',
+   alignItems: 'center',
+
+   backgroundColor: '$yellow',
+   padding: '0.8rem',
+
    ul: {
       display: 'flex',
+      listStyle: 'none',
       gap: '2rem',
+      margin: '0 3rem',
+   },
 
-      listStyleType: 'none',
+   a: {
+      textDecoration: 'none',
+      color: '$gray800',
+   },
 
-      a: {
-         textDecoration: 'none',
-         color: '$gray800',
-         fontSize: '1rem',
+   variants: {
+      windowSize: {
+         'bp1': {
+            a: {
+               fontSize: '1.2rem',
+            }
+         },
+         'bp2': {
+            a: {
+               fontSize: '0.8rem',
+            }
+         },
+         'bp3': {
+            display: 'none',
+            a: {
+               fontSize: '0.6rem',
+            },
+
+            ul: {
+               flexDirection: 'column',
+               justifyContent: 'center',
+               alignItems: 'center',
+            }
+         }
       }
    }
 })
 
-export const SocialMedias = styled('div', {
-   display: 'flex',
-   gap: '2rem',
-   marginRight: '3rem',
-   
+export const MobileNav = styled('ul', {
+   display: 'none',
+   backgroundColor: '$yellow',
+
+   position: 'fixed',
+   height: '100vh',
+   width: '100vw',
+
+   listStyle: 'none',
    a: {
-      textDecoration: 'none',
       color: '$gray800',
+      textDecoration: 'none',
+   },
+
+   variants: {
+      windowSize: {
+         'bp1': {
+
+         },
+         'bp2': {
+
+         },
+         'bp3': {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '3rem',
+
+            ul: {
+               flexDirection: 'column',
+               justifyContent: 'center',
+               alignItems: 'center',
+            }
+         }
+      }
    }
 })
+

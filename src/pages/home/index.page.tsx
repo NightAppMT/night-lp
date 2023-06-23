@@ -1,10 +1,10 @@
 import Header from "@/src/components/global/Header";
 import { Container } from "@/src/styles/pages/app";
-import { Main } from "./styles";
+import { ContactUs, Main } from "./styles";
 
 import ExecutivosBanner from "@/src/components/global/Banner";
 
-import contactUs from '../../assets/contactUs.jpg'
+import contactUs from '../../assets/contactUs.png'
 import Image from "next/image";
 
 export default function Home() {
@@ -13,14 +13,15 @@ export default function Home() {
          <Header />
          <Main>
             <ExecutivosBanner />
-            <section>
+            <ContactUs>
                <Image 
                   src={contactUs}
                   width={805}
                   height={262}
                   alt=""
                />
-            </section>
+               {/* <ContactForm /> */}
+            </ContactUs>
          </Main>
       </Container>
    )
