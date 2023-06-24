@@ -30,7 +30,7 @@ export const useWindowDimensions = () => {
    }, []);
    if (width >= 1120) {
       return 'bp1';
-   } else if (width >= 870 && width < 1120) {
+   } else if (width >= 880 && width < 1120) {
       return 'bp2';
    } else {
       return 'bp3';

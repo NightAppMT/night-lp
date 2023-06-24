@@ -26,34 +26,7 @@ export const LogoAndLogin = styled('div', {
    }
 })
 
-export const MenuButton = styled(Image, {
-   display: 'none',
-
-   variants: {
-      windowSize: {
-         'bp1': {
-
-         },
-         'bp2': {
-
-         },
-         'bp3': {
-            display: 'inline',
-         }
-      },
-      onClickMenuButton: {
-         true: {
-            
-         },
-         false: {
-
-         }
-      }
-   },
-})
-
-
-export const Navbar = styled('nav', {
+export const DesktopNav = styled('nav', {
    display: 'flex',
    justifyContent: 'space-between',
    alignItems: 'center',
@@ -101,18 +74,77 @@ export const Navbar = styled('nav', {
    }
 })
 
-export const MobileNav = styled('ul', {
-   display: 'none',
+export const MobileNav = styled('nav', {
    backgroundColor: '$yellow',
+   width: '100%',
+   padding: '0.5rem 0',
 
-   position: 'fixed',
-   height: '100vh',
-   width: '100vw',
+   ul: {
+      transform: 'translateX(-100%)',
+      listStyle: 'none',
 
-   listStyle: 'none',
+      height: '100vh',
+      width: '100vw',
+
+      display: 'none',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: '2rem',
+   },
+
    a: {
-      color: '$gray800',
       textDecoration: 'none',
+      color: '$gray800',
+   },
+
+   variants: {
+      windowSize: {
+         bp1: {
+
+         },
+         bp2: {
+
+         },
+         bp3: {
+            ul: {
+               position: 'fixed',
+               display: 'flex',
+               backgroundColor: '$yellow',
+            }
+         }
+      },
+
+      isMenuOpen: {
+         true: {
+            position: 'fixed',
+
+            ul: {
+               transform: 'translateX(0%)',
+               display: 'flex',
+            }
+         },
+         false: {
+            ul: {
+               display: 'none',
+            }
+         }
+      }
+   }
+})
+
+export const MenuButton = styled('button', {
+   display: 'none',
+   background: 'transparent',
+   border: 0,
+   padding: '0.5rem',
+   cursor: 'pointer',
+
+   '&:hover': {
+      scale: '1.10',
+   },
+
+   '&:active': {
+      scale: '0.95',
    },
 
    variants: {
@@ -124,18 +156,8 @@ export const MobileNav = styled('ul', {
 
          },
          'bp3': {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            gap: '3rem',
-
-            ul: {
-               flexDirection: 'column',
-               justifyContent: 'center',
-               alignItems: 'center',
-            }
+            display: 'block',
          }
-      }
-   }
+      },
+   },
 })
-
