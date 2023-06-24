@@ -1,6 +1,8 @@
 import { styled } from "@stitches/react";
 import Image from "next/image";
 
+import contactUs from '../../../public/contactUs.png'
+
 export const Main = styled('main', {
 
 })
@@ -12,14 +14,13 @@ export const Banner = styled(Image, {
 })
 
 export const ContactUs = styled('section', {
-   display: 'flex',
+   // display: 'flex',
    
    backgroundColor: '$yellow',
    color: '$black',
    fontWeight: 700,
-   
-   img: {
-      width: '50%',
-      height: 'auto',
-   },
+   backgroundImage: 'url(../../../public/contactUs.png)',
+
+   width: 400,
+   height: 200,
 })
