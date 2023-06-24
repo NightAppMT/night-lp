@@ -19,8 +19,13 @@ export default function Header() {
 
    return (
 
-      <HeaderWrapper>
-         <LogoAndLogin>
+      <HeaderWrapper
+         isMenuOpen={isMenuOpen}
+         windowSize={useWindowDimensions()}
+      >
+         <LogoAndLogin
+            windowSize={useWindowDimensions()}
+         >
             <Image src={logoImg} width={322} height={70} alt="" />
             <div>
                <LoginButton

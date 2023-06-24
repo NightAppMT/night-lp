@@ -8,6 +8,8 @@ export const Button = styled(Link, {
    padding: '0.5rem 1rem',
    borderRadius: 8,
 
+   textAlign: 'center',
+
    variants: {
       bgColor: {
          'gray': {
@@ -17,6 +19,17 @@ export const Button = styled(Link, {
          'yellow': {
             backgroundColor: '$yellow',
             color: '$black',
+         }
+      },
+      windosSize: {
+         bp1: {
+
+         },
+         bp2: {
+
+         },
+         bp3: {
+            scale: 0.8,
          }
       }
    }

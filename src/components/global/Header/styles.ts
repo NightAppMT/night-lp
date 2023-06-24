@@ -1,15 +1,35 @@
 import { styled } from "@stitches/react";
-import Image from "next/image";
+
 
 export const HeaderWrapper = styled('header', {
+   variants: {
+      windowSize: {
+         bp1: {
+            position: 'inherit',
+         },
+         bp2: {
+            position: 'inherit',
+         },
+         bp3: {
 
+         }
+      },
+      isMenuOpen: {
+         true: {
+            position: 'fixed',
+            width: '100%',
+         },
+         false: {
+
+         }
+      }
+   }
 })
 
 export const LogoAndLogin = styled('div', {
    display: 'flex',
    justifyContent: "space-between",
    alignItems: 'center',
-
    padding: '0.5rem',
    backgroundColor: '$gray900',
 
@@ -21,10 +41,31 @@ export const LogoAndLogin = styled('div', {
       display: 'flex',
       alignItems: 'center',
       gap: '1rem',
-
       marginRight: '4rem',
+   },
+
+   variants: {
+      windowSize: {
+         bp1: {
+            
+         },
+         bp2: {
+            
+         },
+         bp3: {
+            div: {
+               marginRight: '2rem',
+            },
+
+            img: {
+               width: '30%',
+               margin: '0 1rem'
+            }
+         }
+      },
    }
-})
+});
+
 
 export const DesktopNav = styled('nav', {
    display: 'flex',
@@ -80,13 +121,11 @@ export const MobileNav = styled('nav', {
    padding: '0.5rem 0',
 
    ul: {
-      transform: 'translateX(-100%)',
       listStyle: 'none',
 
       height: '100vh',
       width: '100vw',
 
-      display: 'none',
       flexDirection: 'column',
       alignItems: 'center',
       gap: '2rem',
@@ -95,15 +134,19 @@ export const MobileNav = styled('nav', {
    a: {
       textDecoration: 'none',
       color: '$gray800',
+
+      '&:hover': {
+
+      }
    },
 
    variants: {
       windowSize: {
          bp1: {
-
+            display: 'none',
          },
          bp2: {
-
+            display: 'none',
          },
          bp3: {
             ul: {
@@ -117,11 +160,6 @@ export const MobileNav = styled('nav', {
       isMenuOpen: {
          true: {
             position: 'fixed',
-
-            ul: {
-               transform: 'translateX(0%)',
-               display: 'flex',
-            }
          },
          false: {
             ul: {

@@ -1,3 +1,4 @@
+import { useWindowDimensions } from "@/src/utils/windowWidth";
 import { Button } from "./styles";
 
 interface Button {
@@ -11,6 +12,7 @@ export default function LoginButton({ content, href, bgColor }: Button) {
       <Button
          href={href}
          bgColor={bgColor}
+         windosSize={useWindowDimensions()}
       >
          {content}
       </Button>
