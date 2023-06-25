@@ -88,7 +88,12 @@ export const StayIn = styled('section', {
 })
 
 export const Jobs = styled('section', {
+   display: 'flex',
+   backgroundColor: '$yellow',
+
    padding: '0 5rem',
+   fontSize: '1.5rem',
+   color: '$black',
    
    '& > img': {
       width:'30rem',
@@ -98,5 +103,17 @@ export const Jobs = styled('section', {
       backgroundColor: '$yellow',
       borderRadius: 16,
       padding: '1rem',
+   },
+
+   footer: {
+      '& > div': {
+         display: 'flex',
+         justifyContent: 'flex-end',
+         alignItems: 'center',      
+      },
+
+      p: {
+         
+      }
    }
 })

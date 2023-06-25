@@ -5,11 +5,11 @@ export const HeaderWrapper = styled('header', {
    variants: {
       isMenuOpen: {
          true: {
-            position: 'fixed',
+            position: 'sticky',
+            top: 0,
             width: '100%',
          },
          false: {
-
          }
       },
       windowSize: {
