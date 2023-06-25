@@ -1,21 +1,20 @@
 import Image from "next/image";
 import { DesktopNav, HeaderWrapper, LogoAndLogin, MenuButton, MobileNav } from "./styles";
 
-import logoImg from '../../../assets/logo.svg'
+import logoImg from '../../../../public/logo.svg'
 import Link from "next/link";
 import LoginButton from "../LoginButton";
-import { useWindowDimensions } from "@/src/utils/windowWidth";
-import menuButton from '../../../assets/menu.svg'
+import menuButton from '../../../../public/menu.svg'
 import { useState } from "react";
+
+import { useWindowDimensions } from "@/src/utils/windowWidth";
 
 export default function Header() {
    let [isMenuOpen, setMenuOpen] = useState(false)
 
    const OpenMenu = () => {
-      console.log(isMenuOpen)
       return !isMenuOpen;
    };
-
 
    return (
 

@@ -1,9 +1,14 @@
-import { ContactInput, Form } from "./styles";
+import { useWindowDimensions } from "@/src/utils/windowWidth";
+import { ContactInput, Form, NameAndPhone } from "./styles";
 
 export default function ContactForm() {
    return (
-      <Form>
-         <footer>
+      <Form
+         windowSize={useWindowDimensions()}
+      >
+         <NameAndPhone
+            windowSize={useWindowDimensions()}
+         >
             <ContactInput>
                <label htmlFor="name">NOME</label>
                <input type="text" name="name" id="name" />
@@ -12,7 +17,7 @@ export default function ContactForm() {
                <label htmlFor="phone">TELEFONE</label>
                <input type="text" name="phone" id="phone" />
             </ContactInput>
-         </footer>
+         </NameAndPhone>
 
          <ContactInput>
             <label htmlFor="email">SEU MELHOR EMAIL </label>

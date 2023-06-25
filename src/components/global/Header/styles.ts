@@ -3,17 +3,6 @@ import { styled } from "@stitches/react";
 
 export const HeaderWrapper = styled('header', {
    variants: {
-      windowSize: {
-         bp1: {
-            position: 'inherit',
-         },
-         bp2: {
-            position: 'inherit',
-         },
-         bp3: {
-
-         }
-      },
       isMenuOpen: {
          true: {
             position: 'fixed',
@@ -22,7 +11,19 @@ export const HeaderWrapper = styled('header', {
          false: {
 
          }
-      }
+      },
+      windowSize: {
+         bp1: {
+            position: 'initial',
+         },
+         bp2: {
+            position: 'initial',
+         },
+         bp3: {
+
+         }
+      },
+      
    }
 })
 

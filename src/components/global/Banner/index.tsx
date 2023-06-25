@@ -1,13 +1,15 @@
-import banner from '../../../assets/banner.png'
-import { Banner } from './styles'
+import banner from '../../../../public/banner.png'
+import { Banner, BannerContainer } from './styles'
 
 export default function ExecutivosBanner() {
    return (
-      <Banner
-      src={banner}
-         width={1440}
-         height={500}
-         alt=""
-      />
+      <BannerContainer>
+         <Banner
+            src={banner}
+            width={1440}
+            height={500}
+            alt=""
+         />
+      </BannerContainer>
    )
 }
