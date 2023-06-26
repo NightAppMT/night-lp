@@ -1,6 +1,6 @@
 import Header from "@/src/components/global/Header";
 import { Container } from "@/src/styles/pages/app";
-import { ContactUs, ContactUsImage, Jobs, Main, StayIn } from "./styles";
+import { ContactUs, ContactUsImage, ExecutivosLogo, ImgSection, Jobs, Main, OurJobsArt, StayIn } from "./styles";
 
 import ExecutivosBanner from "@/src/components/global/Banner";
 import ContactForm from "@/src/components/page/Home/ContactUs";
@@ -22,9 +22,9 @@ import { useWindowDimensions } from "@/src/utils/windowWidth";
 export default function Home() {
    return (
       <Container>
-         <Header />
+         {/* <Header /> */}
          <Main>
-            <ExecutivosBanner />
+            {/* <ExecutivosBanner />
 
             <ContactUs>
                <ContactUsImage>
@@ -58,21 +58,23 @@ export default function Home() {
             </StayIn>
 
 
-            <Image
-               src={logoImg}
-               sizes="100vw"
-               alt=""
-            />
+            <ExecutivosLogo>
+               <Image
+                  src={logoImg}
+                  sizes="100vw"
+                  alt=""
+               />
+            </ExecutivosLogo> */}
 
             <Jobs>
-               <div>
+               <OurJobsArt>
                   <Image
                      src={arteNossosServicos}
                      sizes="100vw"
                      alt=""
                   />
-               </div>
-               <footer>
+               </OurJobsArt>
+               <ImgSection>
                   <div>
                      <p>CRIAÇÃO DE <strong>STARTUPS</strong> OU <strong>EMPRESAS DIGITAIS</strong></p>
                      <Image
@@ -93,7 +95,6 @@ export default function Home() {
                   </div>
                   <div>
                      <p>CONSULTORIA</p>
-                     
                      <Image
                         src={nossosServicosArte3}
                         width={581}
@@ -101,7 +102,7 @@ export default function Home() {
                         alt=""
                      />
                   </div>
-               </footer>
+               </ImgSection>
             </Jobs>
          </Main>
       </Container>

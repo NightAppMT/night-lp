@@ -87,33 +87,49 @@ export const StayIn = styled('section', {
    }
 })
 
+export const ExecutivosLogo = styled('div', {
+   display: 'flex',
+   justifyContent: 'center',
+   margin: '3rem 0',
+})
+
 export const Jobs = styled('section', {
    display: 'flex',
+   justifyContent: 'space-between',
    backgroundColor: '$yellow',
+   margin: '0 6rem',
+   borderRadius: 30,
 
-   padding: '0 5rem',
+   // padding: '0 5rem',
    fontSize: '1.5rem',
    color: '$black',
+
+   p: {
+      fontWeight: 400,
+      maxWidth: 280,
+   },
+})
+
+export const OurJobsArt = styled('div', {
+   img: {
+      padding: '1rem 1rem 0.7rem 1rem',
+   }
+})
+
+export const ImgSection = styled('div', {
+   display: 'flex',
+   flexDirection: 'column',
+   justifyContent: 'space-around',
+   paddingRight: '2rem',
    
-   '& > img': {
-      width:'30rem',
-   },
-
    div: {
-      backgroundColor: '$yellow',
-      borderRadius: 16,
-      padding: '1rem',
+      display: 'flex',
+      justifyContent: 'flex-end',
+      alignItems: 'center',
    },
 
-   footer: {
-      '& > div': {
-         display: 'flex',
-         justifyContent: 'flex-end',
-         alignItems: 'center',      
-      },
-
-      p: {
-         
-      }
+   img: {
+      // width: '80%',
+      // height: 'auto',
    }
 })
