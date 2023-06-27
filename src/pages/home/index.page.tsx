@@ -22,9 +22,9 @@ import { useWindowDimensions } from "@/src/utils/windowWidth";
 export default function Home() {
    return (
       <Container>
-         {/* <Header /> */}
+         <Header />
          <Main>
-            {/* <ExecutivosBanner />
+            <ExecutivosBanner />
 
             <ContactUs>
                <ContactUsImage>
@@ -64,7 +64,7 @@ export default function Home() {
                   sizes="100vw"
                   alt=""
                />
-            </ExecutivosLogo> */}
+            </ExecutivosLogo>
 
             <Jobs>
                <OurJobsArt>
