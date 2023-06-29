@@ -1,7 +1,19 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-   reactStrictMode: true,
-   pageExtensions: ['page.tsx', 'page.ts', 'api.tsx', 'api.ts'],
- }
- 
- module.exports = nextConfig
+const path = require("path");
+
+module.exports = {
+  reactStrictMode: false,
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
+  },
+  pageExtensions: ["page.tsx", "page.ts", "api.tsx", "api.ts"],
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+        port: "",
+        pathname: "**",
+      },
+    ],
+  },
+};
