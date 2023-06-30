@@ -10,6 +10,7 @@ import {
    ResponsiveIframe,
 } from "./styles";
 import ExecutivosBanner from "@/components/Global/Banner";
+import Footer from "@/components/Global/Footer";
 
 export default function LPCompanies() {
    return (
@@ -21,9 +22,7 @@ export default function LPCompanies() {
                <h1>PARA VOCÊ</h1>
                <ResponsiveIframe>
                   <iframe
-                     width="560"
-                     height="315"
-                     src="https://www.youtube.com/embed/RI8L-TOHVlM"
+                     src="https://www.youtube.com/embed/0zl72thBKzo"
                      title="YouTube video player"
                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                      allowFullScreen
@@ -50,46 +49,42 @@ export default function LPCompanies() {
             </ContactForm>
             <Description>
                <p>
-                  Impulsione o sucesso empresarial com tecnologia de ponta para
-                  empresas!
+                  Desfrute de tecnologia personalizada para atender às suas
+                  necessidades!
                </p>
-
                <p>
-                  Nossa Software House especializada oferece soluções
-                  tecnológicas inovadoras para empresas. Com expertise em
-                  inteligência artificial, desenvolvimento de aplicativos,
-                  criação de sites e suporte a startups, estamos prontos para
-                  impulsionar o crescimento do seu negócio.
+                  Na nossa Software House, oferecemos soluções tecnológicas
+                  personalizadas para atender às suas demandas individuais. Seja
+                  você um empreendedor, profissional autônomo ou entusiasta da
+                  tecnologia, estamos aqui para atender às suas necessidades.
                </p>
-
                <p>
-                  Nossa equipe de especialistas em tecnologia trabalha em
-                  estreita colaboração com você para fornecer soluções
-                  personalizadas que melhoram a eficiência, produtividade e
-                  vantagem competitiva da sua empresa.
+                  Nossa equipe especializada está pronta para ajudá-lo a
+                  explorar todo o potencial da inteligência artificial,
+                  desenvolver aplicativos sob medida, criar sites incríveis e
+                  trazer suas ideias e projetos para a realidade.
                </p>
-
                <p>
-                  Desde algoritmos avançados de IA até aplicativos e sites
-                  intuitivos, nos dedicamos a fornecer soluções de tecnologia
-                  inovadoras, preparando sua empresa para os desafios do mundo
-                  digital em constante evolução.
+                  Com uma abordagem centrada no cliente, buscamos entender suas
+                  metas e desejos para entregar soluções tecnológicas que
+                  superem suas expectativas. Estamos aqui para simplificar sua
+                  vida digital e garantir que você esteja equipado com as
+                  ferramentas certas para alcançar o sucesso.
                </p>
-
                <p>
-                  Conte conosco para impulsionar sua empresa com tecnologia
-                  inteligente e inovadora. Entre em contato hoje mesmo e
-                  junte-se a uma nova era de sucesso empresarial!
+                  Descubra uma nova dimensão de tecnologia personalizada. Entre
+                  em contato conosco hoje mesmo e comece a aproveitar todos os
+                  benefícios que a tecnologia tem a oferecer!
                </p>
-
                <p>
-                  [Palavras-chave: tecnologia para empresas, soluções
+                  [Palavras-chave: tecnologia personalizada, soluções
                   tecnológicas, inteligência artificial, desenvolvimento de
-                  aplicativos, criação de sites, suporte a startups, inovação
-                  empresarial, sucesso empresarial, especialistas em tecnologia]
+                  aplicativos, criação de sites, empreendedor, profissional
+                  autônomo, projetos personalizados, sucesso digital]
                </p>
             </Description>
          </Main>
+         <Footer />
       </Container>
    );
 }

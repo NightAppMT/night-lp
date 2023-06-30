@@ -48,6 +48,7 @@ export const ContactForm = styled.section`
    background-color: ${(props) => props.theme.color.primary_100};
    color: black;
    padding: ${px2vw(36)} ${px2vw(36)} ${px2vw(25)} ${px2vw(96)};
+   margin-top: ${px2vw(38)};
    h2 {
       font-size: 2.5rem;
       font-weight: bold;

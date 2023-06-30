@@ -10,6 +10,7 @@ import {
    ResponsiveIframe,
 } from "./styles";
 import ExecutivosBanner from "@/components/Global/Banner";
+import Footer from "@/components/Global/Footer";
 
 export default function LPCompanies() {
    return (
@@ -90,6 +91,7 @@ export default function LPCompanies() {
                </p>
             </Description>
          </Main>
+         <Footer />
       </Container>
    );
 }
