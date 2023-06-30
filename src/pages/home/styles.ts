@@ -1,32 +1,49 @@
 import { styled } from "styled-components";
-import px2vw from "@/utils/px2vw";
+import px2vw2 from "@/utils/px2vw2";
 
 interface ContainerProps {
-  type: boolean;
+   type: boolean;
 }
 
 export const Container = styled.div`
+   overflow: hidden;
    .section1 {
-      padding-bottom: 82.6%;
+      padding-bottom: ${px2vw2(1016.5)};
    }
-   
-   .line1 {
-      background-color: ${props => props.theme.color.primary_100};
-      z-index: -1;
+
+   .lines {
+      width: 100vw;
+      height: auto;
       position: absolute;
+   }
+
+   .line1 {
+      position: relative;
+      background-color: ${(props) => props.theme.color.primary_100};
+      position: absolute;
+      z-index: -1;
       img {
          width: 100%;
          height: auto;
       }
    }
    .line2 {
-      margin-left: 19.5%;
+      position: relative;;
+      z-index: -1;
       img {
-         width: 75%;
-         height: auto;
+         width: 100%;
+         margin-top: 70%;
       }
+
+      /* z-index: -1;
+      margin-left: 0;
+      img {
+         margin-left: ${px2vw2(238.5)};
+         width: ${px2vw2(745)};
+         height: auto;
+      } */
    }
-`
+`;
 
 // export const Container = styled.div`
 //    display: flex;
@@ -57,4 +74,3 @@ export const Container = styled.div`
 //       background-color: purple;
 //    }
 // `;
-
