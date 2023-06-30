@@ -6,16 +6,7 @@ import Image from "next/image";
 export default function Home() {
    return (
       <Container>
-         <div className="lines">
-         <div className="line1">
-               <Image src={lines1} width={1244} height={1027} alt="" />
-            </div>
-            <div className="line2">
-               <Image src={lines2} width={746} height={707} alt="" />
-            </div>
-         </div>
-
-         {/* <section className="section1">
+         <section className="section1">
             <div className="line1">
                <Image src={lines1} width={1244} height={1027} alt="" />
             </div>
@@ -25,7 +16,7 @@ export default function Home() {
             <div className="line2">
                <Image src={lines2} width={746} height={707} alt="" />
             </div>
-         </section> */}
+         </section>
 
          {/* <div className="div1">1</div>
       <div className="div2">2</div>

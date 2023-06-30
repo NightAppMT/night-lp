@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import px2vw2 from "@/utils/px2vw2";
+import px2vw from "@/utils/px2vw";
 
 interface ContainerProps {
    type: boolean;
@@ -8,31 +9,30 @@ interface ContainerProps {
 export const Container = styled.div`
    overflow: hidden;
    .section1 {
-      padding-bottom: ${px2vw2(1016.5)};
-   }
-
-   .lines {
-      width: 100vw;
-      height: auto;
-      position: absolute;
+      padding-bottom: ${px2vw(1060)};
    }
 
    .line1 {
-      position: relative;
+      overflow: hidden;
+      width: 100%;
       background-color: ${(props) => props.theme.color.primary_100};
       position: absolute;
       z-index: -1;
       img {
-         width: 100%;
+         width: ${px2vw(1520)};
          height: auto;
       }
    }
    .line2 {
-      position: relative;;
+      overflow: hidden;
+      width: 100%;
+      background-color: ${props => props.theme.color.blue_100};
+      position: absolute;
       z-index: -1;
       img {
-         width: 100%;
-         margin-top: 70%;
+         width: ${px2vw(940)};
+         height: auto;
+         margin-left: ${px2vw(395)};
       }
 
       /* z-index: -1;
@@ -44,33 +44,3 @@ export const Container = styled.div`
       } */
    }
 `;
-
-// export const Container = styled.div`
-//    display: flex;
-//    .div1, .div2, .div3, .div4, .div5 {
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       width: 200px;
-//       height: 200px;
-//    }
-//    .div1 {
-//       position: absolute;
-//       top: 0;
-//       right: 0;
-//       z-index: -1;
-//       background-color: red;
-//    }
-//    .div2 {
-//       background-color: green;
-//    }
-//    .div3 {
-//       background-color: blue;
-//    }
-//    .div4 {
-//       background-color: yellow;
-//    }
-//    .div5 {
-//       background-color: purple;
-//    }
-// `;
