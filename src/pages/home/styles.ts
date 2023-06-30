@@ -7,7 +7,7 @@ interface ContainerProps {
 
 export const Container = styled.div`
    .section1 {
-      padding-bottom: 82.5%;
+      padding-bottom: 82.6%;
    }
    
    .line1 {
@@ -20,9 +20,9 @@ export const Container = styled.div`
       }
    }
    .line2 {
-      margin-left: 30%;
+      margin-left: 19.5%;
       img {
-         width: 60%;
+         width: 75%;
          height: auto;
       }
    }
