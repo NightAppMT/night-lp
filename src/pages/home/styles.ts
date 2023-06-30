@@ -1,16 +1,28 @@
 import { styled } from "styled-components";
+import px2vw from "@/utils/px2vw";
 
 interface ContainerProps {
   type: boolean;
 }
 
 export const Container = styled.div`
+   .section1 {
+      padding-bottom: 82.5%;
+   }
+   
    .line1 {
       background-color: ${props => props.theme.color.primary_100};
       z-index: -1;
       position: absolute;
       img {
          width: 100%;
+         height: auto;
+      }
+   }
+   .line2 {
+      margin-left: 30%;
+      img {
+         width: 60%;
          height: auto;
       }
    }
