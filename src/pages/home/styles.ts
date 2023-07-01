@@ -9,7 +9,7 @@ interface ContainerProps {
 export const Container = styled.div`
    overflow: hidden;
    .section1 {
-      padding-bottom: ${px2vw(1060)};
+      padding-bottom: ${px2vw(1256)};
    }
 
    .line1 {
@@ -25,7 +25,7 @@ export const Container = styled.div`
    }
 
    .section2 {
-      padding-bottom: ${px2vw(873)};
+      padding-bottom: ${px2vw(860)};
    }
 
    .line2 {
@@ -35,10 +35,14 @@ export const Container = styled.div`
       position: absolute;
       z-index: -1;
       img {
-         width: ${px2vw(940)};
+         width: ${px2vw(930)};
          height: auto;
-         margin-left: ${px2vw(395)};
+         margin-left: ${px2vw(290)};
       }
+   }
+
+   .section3 {
+      padding-bottom: ${px2vw(611)};
    }
 
    .line3 {
@@ -50,7 +54,18 @@ export const Container = styled.div`
       img {
          width: ${px2vw(1520)};
          height: auto;
-         /* margin: ${px2vw(100)}; */
+      }
+   }
+
+   .line4 {
+      overflow: hidden;
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      z-index: -1;
+      img {
+         width: ${px2vw(1520)};
+         height: auto;
       }
    }
 `;

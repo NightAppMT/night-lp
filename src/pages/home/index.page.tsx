@@ -2,6 +2,7 @@ import { Container } from "./styles";
 import lines1 from "@/../public/generalLP/line-group-1.svg";
 import lines2 from "@/../public/generalLP/line-group-2.svg";
 import lines3 from "@/../public/generalLP/line-group-3.svg";
+import lines4 from "@/../public/generalLP/line-group-4.svg";
 import Image from "next/image";
 
 export default function Home() {
@@ -22,6 +23,12 @@ export default function Home() {
          <section className="section3">
             <div className="line3">
                <Image  src={lines3} width={1244} height={500} alt=""/>
+            </div>
+         </section>
+
+         <section className="section4">
+            <div className="line4">
+               <Image  src={lines4} width={1244} height={700} alt=""/>
             </div>
          </section>
 
