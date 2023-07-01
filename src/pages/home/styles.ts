@@ -8,9 +8,11 @@ interface ContainerProps {
 
 export const Container = styled.div`
    overflow: hidden;
+   height: 150vh;
 
    .section1 {
-      padding-bottom: ${px2vw(1256)};
+      padding-bottom: ${px2vw2(55)};
+      /* background-color: black; */
    }
 
    .line1 {
@@ -20,12 +22,9 @@ export const Container = styled.div`
       position: absolute;
       z-index: -1;
       img {
-         width: ${px2vw(1520)};
+         width: ${px2vw2(1244)};
          height: auto;
       }
-   }
-   h1 {
-      background-color: red;
    }
 `;
 
@@ -117,6 +116,10 @@ export const Form = styled.form`
             outline: 0;
          }
       }
+   }
+
+   @media(max-width: 768px) {
+      margin: ${px2vw2(200)} ${px2vw2(150)} 0;
    }
 
    .button-container {
