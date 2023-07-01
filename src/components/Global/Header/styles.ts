@@ -45,7 +45,7 @@ export const DesktopNav = styled.nav`
    justify-content: space-between;
    align-items: center;
    font-size: ${px2vw(20)};
-   background-color: ${props => props.theme.color.primary_100};
+   background-color: ${props => props.theme.color.primary_80};
    padding: ${px2vw(13)};
 
    .navbar1 {
@@ -79,7 +79,7 @@ export const DesktopNav = styled.nav`
    `;
 
 export const MobileNav = styled.nav<MenuButtonProps>`
-   background-color: ${props => props.theme.color.primary_100};
+   background-color: ${props => props.theme.color.primary_80};
    width: 100%;
    padding: ${px2vw(32)} 0;
 
@@ -92,7 +92,7 @@ export const MobileNav = styled.nav<MenuButtonProps>`
       align-items: center;
       gap: 2rem;
       font-size: 2rem;
-      background-color: ${props => props.theme.color.primary_100};
+      background-color: ${props => props.theme.color.primary_80};
    }
 
    a {

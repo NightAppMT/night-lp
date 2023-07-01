@@ -9,7 +9,7 @@ interface ButtonProps {
 export const Button = styled.a<ButtonProps>`
    text-decoration: none;
    font-size: 0.75rem;
-   border: 1px solid ${props => props.theme.color.primary_100};
+   border: 1px solid ${props => props.theme.color.primary_80};
    padding: ${px2vw(8)} ${px2vw(18)};
    border-radius: ${px2vw(9)};
    text-align: center;
@@ -17,7 +17,7 @@ export const Button = styled.a<ButtonProps>`
    ${({ bgColor, theme }) => {
     if (bgColor === "yellow") {
       return css`
-        background-color: ${theme.color.primary_100};
+        background-color: ${theme.color.primary_80};
         color: black;
       `;
     } else if (bgColor === "gray") {

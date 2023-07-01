@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import px2vw from "@/utils/px2vw";
 
 export const FooterContainer = styled.footer`
-   background-color: ${props => props.theme.color.primary_100};
+   background-color: ${props => props.theme.color.primary_80};
    display: flex;
    
    justify-content: space-between;

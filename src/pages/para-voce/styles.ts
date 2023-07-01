@@ -11,7 +11,7 @@ export const ForCompanies = styled.section`
    h1 {
       font-size: 2.5rem;
       font-weight: bold;
-      color: ${(props) => props.theme.color.primary_100};
+      color: ${(props) => props.theme.color.primary_80};
       margin: ${px2vw(24)} 0 ${px2vw(46)} ${px2vw(60)};
    }
    h2 {
@@ -25,8 +25,8 @@ export const ResponsiveIframe = styled.div`
    width: 100%;
    height: 0;
    padding-top: 56.25%;
-   margin: 0 auto;
-
+   margin: 0 auto ${px2vw(38)} auto;
+   
    iframe {
       position: absolute;
       top: 0;
@@ -45,7 +45,7 @@ export const ResponsiveIframe = styled.div`
 `;
 
 export const ContactForm = styled.section`
-   background-color: ${(props) => props.theme.color.primary_100};
+   background-color: ${(props) => props.theme.color.primary_80};
    color: black;
    padding: ${px2vw(36)} ${px2vw(36)} ${px2vw(25)} ${px2vw(96)};
    h2 {
@@ -72,11 +72,11 @@ export const FormInput = styled.div`
       font-weight: bold;
       font-size: ${px2vw(30)};
       background-color: black;
-      color: ${(props) => props.theme.color.primary_100};
+      color: ${(props) => props.theme.color.primary_80};
       &:-webkit-autofill,
       &:-webkit-autofill:hover,
       &:-webkit-autofill:focus {
-         -webkit-text-fill-color: ${(props) => props.theme.color.primary_100};
+         -webkit-text-fill-color: ${(props) => props.theme.color.primary_80};
          -webkit-box-shadow: 0 0 0px 1000px #000 inset;
       }
    }

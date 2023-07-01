@@ -1,3 +1,3 @@
-const px2vw = (size: number, width: number = 1244): string => `${(size / width) * 100}vw`;
+const px2vw2 = (size: number, width: number = 1244): string => `${(size / width) * 100}vw`;
 
-export default px2vw;
+export default px2vw2;
