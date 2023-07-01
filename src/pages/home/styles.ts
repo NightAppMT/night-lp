@@ -23,10 +23,15 @@ export const Container = styled.div`
          height: auto;
       }
    }
+
+   .section2 {
+      padding-bottom: ${px2vw(873)};
+   }
+
    .line2 {
       overflow: hidden;
       width: 100%;
-      background-color: ${props => props.theme.color.blue_100};
+      background-color: ${(props) => props.theme.color.blue_100};
       position: absolute;
       z-index: -1;
       img {
@@ -34,13 +39,18 @@ export const Container = styled.div`
          height: auto;
          margin-left: ${px2vw(395)};
       }
+   }
 
-      /* z-index: -1;
-      margin-left: 0;
+   .line3 {
+      overflow: hidden;
+      width: 100%;
+      background-color: ${(props) => props.theme.color.primary_100};
+      position: absolute;
+      z-index: -1;
       img {
-         margin-left: ${px2vw2(238.5)};
-         width: ${px2vw2(745)};
+         width: ${px2vw(1520)};
          height: auto;
-      } */
+         /* margin: ${px2vw(100)}; */
+      }
    }
 `;
