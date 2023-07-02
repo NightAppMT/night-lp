@@ -8,23 +8,8 @@ interface ContainerProps {
 
 export const Container = styled.div`
    overflow: hidden;
-   height: 150vh;
-
-   .section1 {
-      padding-bottom: ${px2vw2(55)};
-      /* background-color: black; */
-   }
-
-   .line1 {
-      overflow: hidden;
-      width: 100%;
-      background-color: ${(props) => props.theme.color.primary_80};
-      position: absolute;
-      z-index: -1;
-      img {
-         width: ${px2vw2(1244)};
-         height: auto;
-      }
+   h1 {
+      background-color: red;
    }
 `;
 
@@ -61,8 +46,22 @@ export const Header = styled.header`
 `;
 
 export const VideoSection = styled.section`
-
-`
+   padding-bottom: ${px2vw2(44)};
+   .line1 {
+      overflow: hidden;
+      width: 100%;
+      background-color: ${(props) => props.theme.color.primary_80};
+      position: absolute;
+      z-index: -1;
+      img {
+         width: ${px2vw2(1244)};
+         height: auto;
+      }
+   }
+   @media (min-width: 768px) {
+      padding-bottom: ${px2vw2(56)};
+   }
+`;
 
 export const ResponsiveIframe = styled.div`
    position: relative;
@@ -90,73 +89,137 @@ export const ResponsiveIframe = styled.div`
    }
 `;
 
-export const Form = styled.form`
-   position: relative;
-   display: flex;
-   justify-content: space-between;
-   gap: ${px2vw2(64)};
-   margin: ${px2vw2(200)} ${px2vw2(180)} 0;
-   padding: ${px2vw2(46)} ${px2vw2(38)} ${px2vw2(70)};
-   background-color: ${(props) => props.theme.color.secondary_60};
+export const Section2 = styled.section`
+   padding-bottom: ${px2vw2(44)};
+   .line2 {
+      overflow: hidden;
+      width: 100%;
+      background-color: ${(props) => props.theme.color.blue_100};
+      position: absolute;
+      z-index: -1;
+      img {
+         max-width: ${px2vw2(750)};
+         margin-left: ${px2vw2(250)};
+         height: auto;
+      }
+   }
+   @media (min-width: 768px) {
+      /* padding-bottom: ${px2vw2(56)}; */
+   }
 
-   .label-and-input {
+   .section-2-content {
+      padding: ${px2vw2(111)} ${px2vw2(111)} 0;
       display: flex;
-      flex-direction: column;
-
-      label {
-         font-size: 1.1rem;
-         color: white;
-      }
-      input {
-         font-size: 1.3rem;
-         width: ${px2vw2(154)};
-         border: 0;
-         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
-         &:focus {
-            outline: 0;
-         }
-      }
+      justify-content: space-between;
+      align-items: flex-end;
    }
 
-   @media(max-width: 768px) {
-      margin: ${px2vw2(200)} ${px2vw2(150)} 0;
+   .sectionImg {
+      width: ${px2vw2(333)};
+      height: ${px2vw2(444)};
+      object-fit: cover;
+      box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.4);
    }
+`;
 
-   .button-container {
-      align-self: flex-end;
-      button {
-         font-size: 1.5rem;
-         font-weight: bold;
-         color: white;
-         background-color: ${props => props.theme.color.blue_100};
-         padding: ${px2vw2(16)} ${px2vw2(40)};
-         border: 0;
-         box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
-      }
-   }
+export const TextWithImg = styled.div`
+   display: flex;
+   flex-direction: column;
+   gap: ${px2vw2(43)};
+   align-items: flex-end;
 
    .circle {
       position: absolute;
+      width: ${px2vw2(11)};
+      height: ${px2vw2(11)};
       background-color: white;
-      width: ${px2vw2(12)};
-      height: ${px2vw2(12)};
       border-radius: 50%;
    }
    .circle1 {
-      top: ${px2vw2(13)};
-      left: ${px2vw2(13)};
+      top: ${px2vw2(16)};
+      left: ${px2vw2(16)};
    }
    .circle2 {
-      top: ${px2vw2(13)};
-      right: ${px2vw2(13)};
+      top: ${px2vw2(16)};
+      right: ${px2vw2(16)};
    }
    .circle3 {
-      bottom: ${px2vw2(13)};
-      left: ${px2vw2(13)};
+      bottom: ${px2vw2(16)};
+      left: ${px2vw2(16)};
    }
    .circle4 {
-      bottom: ${px2vw2(13)};
-      right: ${px2vw2(13)};
+      bottom: ${px2vw2(16)};
+      right: ${px2vw2(16)};
+   }
+
+
+   .title {
+      position: relative;
+      background-color: ${(props) => props.theme.color.primary_100};
+      width: ${px2vw2(360)};
+      box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.4);
+      h2 {
+         font-size: 2.5rem;
+         font-weight: bold;
+         text-align: center;
+         padding: ${px2vw2(14)} 0 ${px2vw2(17)} 0;
+      }
+      .circle {
+         position: absolute;
+         width: ${px2vw2(11)};
+         height: ${px2vw2(11)};
+         border-radius: 50%;
+         background-color: white;
+      }
+
+      .circle1 {
+         top: ${px2vw2(11)};
+         left: ${px2vw2(16)};
+      }
+      .circle2 {
+         top: ${px2vw2(11)};
+         right: ${px2vw2(16)};
+      }
+   }
+
+   .content {
+      position: relative;
+      width: ${px2vw2(577)};
+      display: grid;
+      grid-template-areas:
+         "image title"
+         "image text";
+      
+      color: white;
+      background-color: ${(props) => props.theme.color.secondary_60};
+      box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.4);
+
+      h3 {
+         grid-area: title;
+         margin: ${px2vw2(32)} 0 ${px2vw2(21)} ${px2vw2(20)};
+         font-size: 2rem;
+      }
+      img {
+         grid-area: image;
+         width: ${px2vw2(111)};
+         height: ${px2vw2(138)};
+         align-self: center;
+         margin: 0 ${px2vw2(40)} 0 ${px2vw2(55)};
+      }
+      .text {
+         text-align: end;
+         margin-right: ${px2vw2(50)};
+         strong {
+            margin-top: ${px2vw2(21)};
+         }
+         p {
+            font-weight: normal;
+            margin-top: ${px2vw2(24)};
+            &:last-child {
+               margin-bottom: ${px2vw2(43)};
+            }
+         }
+      }
    }
 `;
 

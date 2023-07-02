@@ -1,9 +1,18 @@
-import { Container, Form, Header, ResponsiveIframe } from "./styles";
+import {
+   Container,
+   Header,
+   ResponsiveIframe,
+   Section2,
+   TextWithImg,
+   VideoSection,
+} from "./styles";
 import execLogo from "@/../public/generalLP/exec-logo.svg";
 import lines1 from "@/../public/generalLP/line-group-1.svg";
 import lines2 from "@/../public/generalLP/line-group-2.svg";
 import lines3 from "@/../public/generalLP/line-group-3.svg";
 import lines4 from "@/../public/generalLP/line-group-4.svg";
+import LandingPageForm from "@/components/Page/home/Form";
+import { Form } from "@/components/Page/home/Form/styles";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,7 +33,7 @@ export default function Home() {
             </nav>
          </Header>
 
-         <section className="section1">
+         <VideoSection>
             <div className="line1">
                <Image src={lines1} width={1244} height={1027} alt="" />
             </div>
@@ -38,50 +47,59 @@ export default function Home() {
                   allowFullScreen
                />
             </ResponsiveIframe>
-            <Form>
-               <div className="circle circle1" />
-               <div className="circle circle2" />
-               <div className="circle circle3" />
-               <div className="circle circle4" />
-
-               <div className="label-and-input">
-                  <label htmlFor="name">Nome</label>
-                  <input type="text" name="name" id="name" />
-               </div>
-
-               <div className="label-and-input">
-                  <label htmlFor="phoneNumber">Telefone</label>
-                  <input type="tel" name="phoneNumber" id="phoneNumber" />
-               </div>
-
-               <div className="label-and-input">
-                  <label htmlFor="email">Email</label>
-                  <input type="email" name="email" id="email" />
-               </div>
-
-               <div className="button-container">
-                  <button type="submit">Enviar</button>
-               </div>
-            </Form>
-         </section>
-
-         {/* <section className="section2">
+            <LandingPageForm />
+         </VideoSection>
+         <Section2>
             <div className="line2">
-               <Image src={lines2} width={746} height={707} alt="" />
+               <Image src={lines2} width={1244} height={1179} alt="" />
             </div>
-         </section>
+            <div className="section-2-content">
+               <Image
+                  src={
+                     "https://images.pexels.com/photos/16069883/pexels-photo-16069883/free-photo-of-desfiladeiro-canion-montanhas-rocha.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  }
+                  width={1260}
+                  height={750}
+                  alt=""
+                  className="sectionImg"
+               />
+               <TextWithImg>
+                  <div className="title">
+                     <h2>TEXTO</h2>
+                     <div className="circle circle1" />
+                     <div className="circle circle2" />
+                  </div>
+                  <div className="content">
+                     <h3>TEXTO</h3>
 
-         <section className="section3">
-            <div className="line3">
-               <Image  src={lines3} width={1244} height={500} alt=""/>
-            </div>
-         </section>
+                     <Image
+                        src={
+                           "https://images.pexels.com/photos/16069883/pexels-photo-16069883/free-photo-of-desfiladeiro-canion-montanhas-rocha.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        }
+                        width={1260}
+                        height={750}
+                        alt=""
+                     />
 
-         <section className="section4">
-            <div className="line4">
-               <Image  src={lines4} width={1244} height={700} alt=""/>
+                     <div className="text">
+                        <strong>O Lorem Ipsum é um texto modelo</strong>
+                        <p>
+                           O Lorem Ipsum é um texto modelo da indústria
+                           tipográfica e de impressão.
+                        </p>
+                        <p>
+                           O Lorem Ipsum é um texto modelo da indústria
+                           tipográfica e de impressão.
+                        </p>
+                     </div>
+                     <div className="circle circle1" />
+                     <div className="circle circle2" />
+                     <div className="circle circle3" />
+                     <div className="circle circle4" />
+                  </div>
+               </TextWithImg>
             </div>
-         </section> */}
+         </Section2>
       </Container>
    );
 }
