@@ -90,7 +90,7 @@ export const ResponsiveIframe = styled.div`
 `;
 
 export const Section2 = styled.section`
-   padding-bottom: ${px2vw2(44)};
+   padding-bottom: ${px2vw2(93)};
    .line2 {
       overflow: hidden;
       width: 100%;
@@ -104,7 +104,7 @@ export const Section2 = styled.section`
       }
    }
    @media (min-width: 768px) {
-      /* padding-bottom: ${px2vw2(56)}; */
+      padding-bottom: ${px2vw2(141.3)};
    }
 
    .section-2-content {
@@ -127,30 +127,6 @@ export const TextWithImg = styled.div`
    flex-direction: column;
    gap: ${px2vw2(43)};
    align-items: flex-end;
-
-   .circle {
-      position: absolute;
-      width: ${px2vw2(11)};
-      height: ${px2vw2(11)};
-      background-color: white;
-      border-radius: 50%;
-   }
-   .circle1 {
-      top: ${px2vw2(16)};
-      left: ${px2vw2(16)};
-   }
-   .circle2 {
-      top: ${px2vw2(16)};
-      right: ${px2vw2(16)};
-   }
-   .circle3 {
-      bottom: ${px2vw2(16)};
-      left: ${px2vw2(16)};
-   }
-   .circle4 {
-      bottom: ${px2vw2(16)};
-      right: ${px2vw2(16)};
-   }
 
 
    .title {
@@ -222,6 +198,24 @@ export const TextWithImg = styled.div`
       }
    }
 `;
+
+export const Section3 = styled.section`
+   .line3 {
+      overflow: hidden;
+      width: 100%;
+      background-color: ${(props) => props.theme.color.primary_80};
+      position: absolute;
+      z-index: -1;
+      img {
+         width: ${px2vw2(1244)};
+         height: auto;
+      
+      }
+   }
+   @media (min-width: 768px) {
+      padding-bottom: ${px2vw2(56)};
+   }
+`
 
 /* .section2 {
       padding-bottom: ${px2vw(860)};

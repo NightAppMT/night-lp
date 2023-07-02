@@ -3,6 +3,7 @@ import {
    Header,
    ResponsiveIframe,
    Section2,
+   Section3,
    TextWithImg,
    VideoSection,
 } from "./styles";
@@ -100,6 +101,13 @@ export default function Home() {
                </TextWithImg>
             </div>
          </Section2>
+         <Section3>
+            <div className="line3">
+               <Image src={lines3} width={1244} height={1179} alt="" />
+            </div>
+
+            
+         </Section3>
       </Container>
    );
 }
