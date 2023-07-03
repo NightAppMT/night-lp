@@ -1,6 +1,7 @@
 import {
    Container,
    Header,
+   Menu,
    ResponsiveIframe,
    Section2,
    Section3,
@@ -16,6 +17,8 @@ import LandingPageForm from "@/components/Page/home/Form";
 import { Form } from "@/components/Page/home/Form/styles";
 import Image from "next/image";
 import Link from "next/link";
+
+import MenuIcon from "@/../public/generalLP/menu-button.svg";
 
 export default function Home() {
    return (
@@ -48,7 +51,10 @@ export default function Home() {
                   allowFullScreen
                />
             </ResponsiveIframe>
-            <LandingPageForm />
+
+            <div className="form-container">
+               <LandingPageForm />
+            </div>
          </VideoSection>
          <Section2>
             <div className="line2">
@@ -105,8 +111,52 @@ export default function Home() {
             <div className="line3">
                <Image src={lines3} width={1244} height={1179} alt="" />
             </div>
+            <Menu>
+               <Link href={"#"}>
+                  <Image
+                     src={MenuIcon}
+                     width={55}
+                     height={55}
+                     alt="Ícone do Menu"
+                  />
+                  <span>Texto</span>
+               </Link>
+               <Link href={"#"}>
+                  <Image
+                     src={MenuIcon}
+                     width={55}
+                     height={55}
+                     alt="Ícone do Menu"
+                  />
+                  <span>Texto</span>
+               </Link>
+               <Link href={"#"}>
+                  <Image
+                     src={MenuIcon}
+                     width={55}
+                     height={55}
+                     alt="Ícone do Menu"
+                  />
+                  <span>Texto</span>
+               </Link>
+               <Link href={"#"}>
+                  <Image
+                     src={MenuIcon}
+                     width={55}
+                     height={55}
+                     alt="Ícone do Menu"
+                  />
+                  <span>Texto</span>
+               </Link>
+            </Menu>
 
-            
+            <div className="title">
+               <h2>Texto</h2>
+               <div className="circle circle1" />
+               <div className="circle circle2" />
+            </div>
+
+            <LandingPageForm />
          </Section3>
       </Container>
    );

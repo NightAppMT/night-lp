@@ -6,7 +6,7 @@ export const Form = styled.form`
    display: flex;
    justify-content: space-between;
    gap: ${px2vw2(64)};
-   margin: ${px2vw2(200)} ${px2vw2(180)} 0;
+   margin: 0 ${px2vw2(150)} 0;
    padding: ${px2vw2(46)} ${px2vw2(38)} ${px2vw2(70)};
    background-color: ${(props) => props.theme.color.secondary_60};
    box-shadow: 7px 7px 2px rgba(0, 0, 0, 0.4);
@@ -30,8 +30,8 @@ export const Form = styled.form`
       }
    }
 
-   @media(max-width: 768px) {
-      margin: ${px2vw2(200)} ${px2vw2(150)} 0;
+   @media(min-width: 768px) {
+      margin: 0 ${px2vw2(180)} 0;
    }
 
    .button-container {

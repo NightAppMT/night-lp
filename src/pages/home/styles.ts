@@ -46,7 +46,7 @@ export const Header = styled.header`
 `;
 
 export const VideoSection = styled.section`
-   padding-bottom: ${px2vw2(44)};
+   padding-bottom: ${px2vw2(64)};
    .line1 {
       overflow: hidden;
       width: 100%;
@@ -59,7 +59,10 @@ export const VideoSection = styled.section`
       }
    }
    @media (min-width: 768px) {
-      padding-bottom: ${px2vw2(56)};
+      padding-bottom: ${px2vw2(86)};
+   }
+   .form-container {
+      margin-top: ${px2vw2(180)};
    }
 `;
 
@@ -98,8 +101,9 @@ export const Section2 = styled.section`
       position: absolute;
       z-index: -1;
       img {
-         max-width: ${px2vw2(750)};
-         margin-left: ${px2vw2(250)};
+         /* width: 61%; */
+         width: ${px2vw2(750)};
+         margin-left: ${px2vw2(243)};
          height: auto;
       }
    }
@@ -134,6 +138,7 @@ export const TextWithImg = styled.div`
       background-color: ${(props) => props.theme.color.primary_100};
       width: ${px2vw2(360)};
       box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.4);
+
       h2 {
          font-size: 2.5rem;
          font-weight: bold;
@@ -214,6 +219,67 @@ export const Section3 = styled.section`
    }
    @media (min-width: 768px) {
       padding-bottom: ${px2vw2(56)};
+   }
+
+   .title {
+      position: relative;
+      display: flex;
+      margin: auto;
+      width: ${px2vw2(256)};
+      justify-content: center;
+      margin-bottom: ${px2vw2(55)};
+      background-color: ${props => props.theme.color.blue_100};
+      h2 {
+         color: white;
+         font-size: 2.5rem;
+         font-weight: bold;
+         padding: ${px2vw2(16)} ${px2vw2(72)};
+      }
+
+      .circle {
+         position: absolute;
+         width: ${px2vw2(11)};
+         height: ${px2vw2(11)};
+         background-color: white;
+         border-radius: 50%;
+      }
+      .circle1 {
+         top: ${px2vw2(16)};
+         left: ${px2vw2(16)};
+      }
+      .circle2 {
+         top: ${px2vw2(16)};
+         right: ${px2vw2(16)};
+      }
+   }
+`
+
+export const Menu = styled.div`
+   display: flex;
+   justify-content: center;
+   position: relative;
+   bottom: ${px2vw2(55)};
+
+   a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: ${px2vw(20)};
+
+      width: ${px2vw(255)};
+      height: ${px2vw2(110)};
+      background-color: ${props => props.theme.color.secondary_20};
+      border: 1px solid black;
+      box-shadow: inset -3px 0 5px rgba(0, 0, 0, 0.4);
+
+      text-decoration: none;
+      color: black;
+      font-size: 2.1rem;
+      font-weight: bold;
+      img {
+         width: ${px2vw2(55)};
+         height: auto;
+      }
    }
 `
 

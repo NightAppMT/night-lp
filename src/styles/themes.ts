@@ -6,7 +6,7 @@ const Theme = {
     primary_80: "#ffff44",
     primary_100: "#efc622",
 
-    secondary_20: "#",
+    secondary_20: "#f5f5f5",
     secondary_40: "#",
     secondary_60: "#2d2a28",
     secondary_80: "#212121",
