@@ -6,7 +6,9 @@ import {
    ResponsiveIframe,
    Section2,
    Section3,
+   Section4,
    TextWithImg,
+   TextWithImg2,
    VideoSection,
 } from "./styles";
 import execLogo from "@/../public/generalLP/exec-logo.svg";
@@ -106,6 +108,7 @@ export default function Home() {
                   </TextWithImg>
                </div>
             </Section2>
+
             <Section3>
                <div className="line3">
                   <Image src={lines3} width={1244} height={1179} alt="" />
@@ -155,6 +158,58 @@ export default function Home() {
                </div>
                <LandingPageForm />
             </Section3>
+
+            <Section4>
+               <div className="line4">
+                  <Image src={lines4} width={1244} height={1179} alt="" />
+               </div>
+
+               <div className="section-4-content">
+                  <TextWithImg2>
+                     <div className="title">
+                        <h2>TEXTO</h2>
+                        <div className="circle circle1" />
+                        <div className="circle circle2" />
+                     </div>
+                     <div className="content">
+                        <h3>TEXTO</h3>
+                        <Image
+                           src={
+                              "https://images.pexels.com/photos/16069883/pexels-photo-16069883/free-photo-of-desfiladeiro-canion-montanhas-rocha.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                           }
+                           width={1260}
+                           height={750}
+                           alt=""
+                        />
+                        <div className="text">
+                           <strong>O Lorem Ipsum é um texto modelo</strong>
+                           <p>
+                              O Lorem Ipsum é um texto modelo da indústria
+                              tipográfica e de impressão.
+                           </p>
+                           <p>
+                              O Lorem Ipsum é um texto modelo da indústria
+                              tipográfica e de impressão.
+                           </p>
+                        </div>
+                        <div className="circle circle1" />
+                        <div className="circle circle2" />
+                        <div className="circle circle3" />
+                        <div className="circle circle4" />
+                     </div>
+                  </TextWithImg2>
+
+                  <Image
+                     src={
+                        "https://images.pexels.com/photos/16069883/pexels-photo-16069883/free-photo-of-desfiladeiro-canion-montanhas-rocha.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                     }
+                     width={1260}
+                     height={750}
+                     alt=""
+                     className="sectionImg"
+                  />
+               </div>
+            </Section4>
          </Main>
       </Container>
    );
