@@ -17,11 +17,11 @@ import lines2 from "@/../public/generalLP/line-group-2.svg";
 import lines3 from "@/../public/generalLP/line-group-3.svg";
 import lines4 from "@/../public/generalLP/line-group-4.svg";
 import LandingPageForm from "@/components/Page/home/Form";
-import { Form } from "@/components/Page/home/Form/styles";
 import Image from "next/image";
 import Link from "next/link";
 
 import MenuIcon from "@/../public/generalLP/menu-button.svg";
+import Circle from "@/components/Page/home/Circle";
 
 export default function Home() {
    return (
@@ -76,8 +76,8 @@ export default function Home() {
                   <TextWithImg>
                      <div className="title">
                         <h2>TEXTO</h2>
-                        <div className="circle circle1" />
-                        <div className="circle circle2" />
+                        <Circle top={11} left={16} />
+                        <Circle top={11} rigth={16} />
                      </div>
                      <div className="content">
                         <h3>TEXTO</h3>
@@ -100,10 +100,11 @@ export default function Home() {
                               tipográfica e de impressão.
                            </p>
                         </div>
-                        <div className="circle circle1" />
-                        <div className="circle circle2" />
-                        <div className="circle circle3" />
-                        <div className="circle circle4" />
+
+                        <Circle top={16} left={16} />
+                        <Circle top={16} rigth={16} />
+                        <Circle bottom={16} left={16} />
+                        <Circle bottom={16} rigth={16} />
                      </div>
                   </TextWithImg>
                </div>
@@ -113,6 +114,7 @@ export default function Home() {
                <div className="line3">
                   <Image src={lines3} width={1244} height={1179} alt="" />
                </div>
+
                <Menu>
                   <Link href={"#"}>
                      <Image
@@ -151,10 +153,11 @@ export default function Home() {
                      <span>Texto</span>
                   </Link>
                </Menu>
+
                <div className="title">
                   <h2>Texto</h2>
-                  <div className="circle circle1" />
-                  <div className="circle circle2" />
+                  <Circle top={16} left={16} />
+                  <Circle top={16} rigth={16} />
                </div>
                <LandingPageForm />
             </Section3>
@@ -168,8 +171,8 @@ export default function Home() {
                   <TextWithImg2>
                      <div className="title">
                         <h2>TEXTO</h2>
-                        <div className="circle circle1" />
-                        <div className="circle circle2" />
+                        <Circle top={11} left={16} />
+                        <Circle top={11} rigth={16} />
                      </div>
                      <div className="content">
                         <h3>TEXTO</h3>
@@ -192,10 +195,10 @@ export default function Home() {
                               tipográfica e de impressão.
                            </p>
                         </div>
-                        <div className="circle circle1" />
-                        <div className="circle circle2" />
-                        <div className="circle circle3" />
-                        <div className="circle circle4" />
+                        <Circle top={16} left={16} />
+                        <Circle top={16} rigth={16} />
+                        <Circle bottom={16} left={16} />
+                        <Circle bottom={16} rigth={16} />
                      </div>
                   </TextWithImg2>
 

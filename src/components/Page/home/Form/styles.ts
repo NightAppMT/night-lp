@@ -52,28 +52,4 @@ export const Form = styled.form`
          }
       }
    }
-
-   .circle {
-      position: absolute;
-      background-color: white;
-      width: ${px2vw2(12)};
-      height: ${px2vw2(12)};
-      border-radius: 50%;
-   }
-   .circle1 {
-      top: ${px2vw2(13)};
-      left: ${px2vw2(13)};
-   }
-   .circle2 {
-      top: ${px2vw2(13)};
-      right: ${px2vw2(13)};
-   }
-   .circle3 {
-      bottom: ${px2vw2(13)};
-      left: ${px2vw2(13)};
-   }
-   .circle4 {
-      bottom: ${px2vw2(13)};
-      right: ${px2vw2(13)};
-   }
 `;

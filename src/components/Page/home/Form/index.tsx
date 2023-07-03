@@ -1,3 +1,4 @@
+import Circle from "../Circle";
 import { Form } from "./styles";
 
 export default function LandingPageForm() {
@@ -21,11 +22,11 @@ export default function LandingPageForm() {
          <div className="button-container">
             <button type="submit">Enviar</button>
          </div>
-
-         <div className="circle circle1" />
-         <div className="circle circle2" />
-         <div className="circle circle3" />
-         <div className="circle circle4" />
+         
+         <Circle top={16} left={16} />
+         <Circle top={16} rigth={16}/>
+         <Circle bottom={16} left={16} />
+         <Circle bottom={16} rigth={16} />
       </Form>
    );
 }
