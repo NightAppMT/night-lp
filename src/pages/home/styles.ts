@@ -45,13 +45,21 @@ export const Header = styled.header`
    }
 `;
 
+export const Main = styled.main`
+   position: relative;
+`
+
 export const VideoSection = styled.section`
-   padding-bottom: ${px2vw2(64)};
+   /* padding-bottom: ${px2vw2(64)}; */
+   padding-bottom: 6.47%;
+
    .line1 {
       overflow: hidden;
       width: 100%;
       background-color: ${(props) => props.theme.color.primary_80};
       position: absolute;
+      top: 0;
+      left: 0;
       z-index: -1;
       img {
          width: ${px2vw2(1244)};
@@ -59,7 +67,8 @@ export const VideoSection = styled.section`
       }
    }
    @media (min-width: 768px) {
-      padding-bottom: ${px2vw2(86)};
+      /* padding-bottom: ${px2vw2(86)}; */
+      padding-bottom: 7.11%;
    }
    .form-container {
       margin-top: ${px2vw2(180)};
@@ -99,6 +108,7 @@ export const Section2 = styled.section`
       width: 100%;
       background-color: ${(props) => props.theme.color.blue_100};
       position: absolute;
+      top: ${px2vw2(1028)};
       z-index: -1;
       img {
          /* width: 61%; */
@@ -210,6 +220,7 @@ export const Section3 = styled.section`
       width: 100%;
       background-color: ${(props) => props.theme.color.primary_80};
       position: absolute;
+      top: ${px2vw2(1724.)};
       z-index: -1;
       img {
          width: ${px2vw2(1244)};
@@ -283,47 +294,8 @@ export const Menu = styled.div`
    }
 `
 
-/* .section2 {
-      padding-bottom: ${px2vw(860)};
-   }
+export const Section4 = styled.section`
+   
+`
 
-   .line2 {
-      overflow: hidden;
-      width: 100%;
-      background-color: ${(props) => props.theme.color.blue_100};
-      position: absolute;
-      z-index: -1;
-      img {
-         width: ${px2vw(935)};
-         height: auto;
-         margin-left: ${px2vw(290)};
-      }
-   }
 
-   .section3 {
-      padding-bottom: ${px2vw(611)};
-   }
-
-   .line3 {
-      overflow: hidden;
-      width: 100%;
-      background-color: ${(props) => props.theme.color.primary_80};
-      position: absolute;
-      z-index: -1;
-      img {
-         width: ${px2vw(1520)};
-         height: auto;
-      }
-   }
-
-   .line4 {
-      overflow: hidden;
-      width: 100%;
-      background-color: white;
-      position: absolute;
-      z-index: -1;
-      img {
-         width: ${px2vw(1520)};
-         height: auto;
-      }
-   } */
