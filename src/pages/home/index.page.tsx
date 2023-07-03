@@ -176,14 +176,6 @@ export default function Home() {
                      </div>
                      <div className="content">
                         <h3>TEXTO</h3>
-                        <Image
-                           src={
-                              "https://images.pexels.com/photos/16069883/pexels-photo-16069883/free-photo-of-desfiladeiro-canion-montanhas-rocha.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                           }
-                           width={1260}
-                           height={750}
-                           alt=""
-                        />
                         <div className="text">
                            <strong>O Lorem Ipsum é um texto modelo</strong>
                            <p>
@@ -195,6 +187,15 @@ export default function Home() {
                               tipográfica e de impressão.
                            </p>
                         </div>
+
+                        <Image
+                           src={
+                              "https://images.pexels.com/photos/16069883/pexels-photo-16069883/free-photo-of-desfiladeiro-canion-montanhas-rocha.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                           }
+                           width={1260}
+                           height={750}
+                           alt=""
+                        />
                         <Circle top={16} left={16} />
                         <Circle top={16} rigth={16} />
                         <Circle bottom={16} left={16} />
@@ -214,6 +215,19 @@ export default function Home() {
                </div>
             </Section4>
          </Main>
+         <Header>
+            <Image
+               src={execLogo}
+               width={84}
+               height={84}
+               alt="Logo Executivo's Digital"
+            />
+            <nav>
+               <Link href={"#"}>QUEM SOMOS</Link>
+               <Link href={"#"}>EXECUTADOS</Link>
+               <Link href={"#"}>FALE CONOSCO</Link>
+            </nav>
+         </Header>
       </Container>
    );
 }

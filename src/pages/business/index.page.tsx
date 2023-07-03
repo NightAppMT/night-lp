@@ -1,4 +1,4 @@
-import Header from "@/components/Global/Header";
+import Header from "@/components/Global/header-extra";
 import {
    ContactForm,
    Container,
@@ -10,12 +10,14 @@ import {
    ResponsiveIframe,
 } from "./styles";
 import ExecutivosBanner from "@/components/Global/Banner";
-import Footer from "@/components/Global/Footer";
+import Footer from "@/components/Global/footer-extra";
+import { FooterComponent } from "@/components/Global/Footer";
+import { HeaderComponent } from "@/components/Global/Header";
 
 export default function LPCompanies() {
    return (
       <Container>
-         <Header />
+         <HeaderComponent/>
          <Main>
             <ExecutivosBanner />
             <ForCompanies>
@@ -28,9 +30,10 @@ export default function LPCompanies() {
                      title="YouTube video player"
                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                      allowFullScreen
-                  ></iframe>
+                  />
                </ResponsiveIframe>
             </ForCompanies>
+
             <ContactForm>
                <h2>QUER FALAR DIRETAMENTE CONOSCO?</h2>
                <h2>INSIRA SEUS DADOS:</h2>
@@ -49,6 +52,7 @@ export default function LPCompanies() {
                   </FormInput>
                </Form>
             </ContactForm>
+
             <Description>
                <p>
                   Impulsione o sucesso empresarial com tecnologia de ponta para
@@ -91,7 +95,7 @@ export default function LPCompanies() {
                </p>
             </Description>
          </Main>
-         <Footer />
+         <FooterComponent/>
       </Container>
    );
 }

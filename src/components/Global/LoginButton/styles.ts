@@ -1,6 +1,6 @@
 import { css } from "styled-components";
 import { styled } from "styled-components";
-import px2vw from "@/utils/px2vw";
+import px2vw from "@/utils/size";
 
 interface ButtonProps {
    bgColor: 'yellow' | 'gray',

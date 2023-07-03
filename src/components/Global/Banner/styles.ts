@@ -1,10 +1,10 @@
 import { styled } from "styled-components";
-import px2vw from "@/utils/px2vw";
+import px2vw from "@/utils/size";
 
 export const BannerWrapper = styled.div`
    display: flex;
    justify-content: center;
-   margin: 0 ${px2vw(32)};
+   padding: ${px2vw(175)} ${px2vw(32)} 0;
 
    img {
       width: 100%;

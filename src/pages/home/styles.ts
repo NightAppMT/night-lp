@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import px2vw2 from "@/utils/px2vw2";
-import px2vw from "@/utils/px2vw";
+import px2vw from "@/utils/size";
 
 interface ContainerProps {
    type: boolean;
@@ -47,7 +47,7 @@ export const Header = styled.header`
 
 export const Main = styled.main`
    position: relative;
-`
+`;
 
 export const VideoSection = styled.section`
    /* padding-bottom: ${px2vw2(64)}; */
@@ -142,7 +142,6 @@ export const TextWithImg = styled.div`
    gap: ${px2vw2(43)};
    align-items: flex-end;
 
-
    .title {
       position: relative;
       background-color: ${(props) => props.theme.color.primary_100};
@@ -155,22 +154,6 @@ export const TextWithImg = styled.div`
          text-align: center;
          padding: ${px2vw2(14)} 0 ${px2vw2(17)} 0;
       }
-      .circle {
-         position: absolute;
-         width: ${px2vw2(11)};
-         height: ${px2vw2(11)};
-         border-radius: 50%;
-         background-color: white;
-      }
-
-      .circle1 {
-         top: ${px2vw2(11)};
-         left: ${px2vw2(16)};
-      }
-      .circle2 {
-         top: ${px2vw2(11)};
-         right: ${px2vw2(16)};
-      }
    }
 
    .content {
@@ -180,7 +163,7 @@ export const TextWithImg = styled.div`
       grid-template-areas:
          "image title"
          "image text";
-      
+
       color: white;
       background-color: ${(props) => props.theme.color.secondary_60};
       box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.4);
@@ -222,12 +205,11 @@ export const Section3 = styled.section`
       width: 100%;
       background-color: ${(props) => props.theme.color.primary_80};
       position: absolute;
-      top: ${px2vw2(1724.)};
+      top: ${px2vw2(1724)};
       z-index: -1;
       img {
          width: ${px2vw2(1244)};
          height: auto;
-      
       }
    }
    @media (min-width: 768px) {
@@ -241,31 +223,15 @@ export const Section3 = styled.section`
       width: ${px2vw2(256)};
       justify-content: center;
       margin-bottom: ${px2vw2(55)};
-      background-color: ${props => props.theme.color.blue_100};
+      background-color: ${(props) => props.theme.color.blue_100};
       h2 {
          color: white;
          font-size: 2.5rem;
          font-weight: bold;
          padding: ${px2vw2(16)} ${px2vw2(72)};
       }
-
-      .circle {
-         position: absolute;
-         width: ${px2vw2(11)};
-         height: ${px2vw2(11)};
-         background-color: white;
-         border-radius: 50%;
-      }
-      .circle1 {
-         top: ${px2vw2(16)};
-         left: ${px2vw2(16)};
-      }
-      .circle2 {
-         top: ${px2vw2(16)};
-         right: ${px2vw2(16)};
-      }
    }
-`
+`;
 
 export const Menu = styled.div`
    display: flex;
@@ -281,7 +247,7 @@ export const Menu = styled.div`
 
       width: ${px2vw(255)};
       height: ${px2vw2(110)};
-      background-color: ${props => props.theme.color.secondary_20};
+      background-color: ${(props) => props.theme.color.secondary_20};
       border: 1px solid black;
       box-shadow: inset -3px 0 5px rgba(0, 0, 0, 0.4);
 
@@ -294,10 +260,18 @@ export const Menu = styled.div`
          height: auto;
       }
    }
-`
+`;
 
 export const Section4 = styled.section`
-   padding-bottom: 20%;
+   
+   padding-bottom: ${px2vw2(18)};
+   @media(min-width: 1024px) {
+      padding-bottom: ${px2vw2(145)};
+   }
+   @media(min-width: 768px) {
+      padding-bottom: ${px2vw2(132)};
+   }
+   
    .line4 {
       overflow: hidden;
       width: 100%;
@@ -323,14 +297,13 @@ export const Section4 = styled.section`
       object-fit: cover;
       box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.4);
    }
-`
+`;
 
 export const TextWithImg2 = styled.div`
    display: flex;
    flex-direction: column;
    gap: ${px2vw2(43)};
    align-items: flex-start;
-
 
    .title {
       position: relative;
@@ -345,22 +318,6 @@ export const TextWithImg2 = styled.div`
          text-align: center;
          padding: ${px2vw2(14)} 0 ${px2vw2(17)} 0;
       }
-      .circle {
-         position: absolute;
-         width: ${px2vw2(11)};
-         height: ${px2vw2(11)};
-         border-radius: 50%;
-         background-color: white;
-      }
-
-      .circle1 {
-         top: ${px2vw2(11)};
-         left: ${px2vw2(16)};
-      }
-      .circle2 {
-         top: ${px2vw2(11)};
-         right: ${px2vw2(16)};
-      }
    }
 
    .content {
@@ -368,9 +325,9 @@ export const TextWithImg2 = styled.div`
       width: ${px2vw2(577)};
       display: grid;
       grid-template-areas:
-         "image title"
-         "image text";
-      
+         "title image"
+         "text image";
+
       color: white;
       background-color: ${(props) => props.theme.color.secondary_60};
       box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.4);
@@ -378,19 +335,19 @@ export const TextWithImg2 = styled.div`
       h3 {
          font-weight: bold;
          grid-area: title;
-         margin: ${px2vw2(32)} 0 ${px2vw2(21)} ${px2vw2(20)};
+         margin: ${px2vw2(32)} ${px2vw2(40)} ${px2vw2(21)} 0;
          font-size: 2rem;
+         text-align: right;
       }
       img {
          grid-area: image;
          width: ${px2vw2(111)};
          height: ${px2vw2(138)};
          align-self: center;
-         margin: 0 ${px2vw2(40)} 0 ${px2vw2(55)};
+         margin: 0 ${px2vw2(55)} 0 ${px2vw2(55)};
       }
       .text {
-         text-align: end;
-         margin-right: ${px2vw2(50)};
+         margin-left: ${px2vw2(50)};
          strong {
             margin-top: ${px2vw2(21)};
          }
@@ -404,5 +361,3 @@ export const TextWithImg2 = styled.div`
       }
    }
 `;
-
-

@@ -1,141 +1,72 @@
-import { css, styled } from "styled-components";
-import px2vw from "@/utils/px2vw";
+import px2vw from "@/utils/size";
+import Image from "next/image";
+import { Button, Navbar, Container, Nav, NavLink } from "react-bootstrap";
+import { styled } from "styled-components";
 
-interface MenuButtonProps {
-   isMenuOpen: boolean,
-}
-
-export const HeaderWrapper = styled.header<MenuButtonProps>`
-   ${({ isMenuOpen }) => {
-      if (isMenuOpen === true) {
-         return css`
-            position: sticky;
-            top: 0;
-      `;
-      } else {
-         return css``;
-      }
-   }}
-`
-
-
-export const LogoAndLogin = styled.div`
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: ${px2vw(8)};
-   background-color: ${props => props.theme.color.secondary_100};
-
-   img {
-      width: ${px2vw(322)};
-      margin: 0 ${px2vw(74)};
-   };
-
-   div {
-      display: flex;
-      align-items: center;
-      gap: ${px2vw(18)};
-      margin-right: ${px2vw(50)};
-   };
+export const MainHeaderContainer = styled.main`
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: ease 0.4s;
+  &--scrolled {
+    height: 40px;
+  }
+  z-index: 5;
 `;
 
-
-export const DesktopNav = styled.nav`
-   display: none;
-   justify-content: space-between;
-   align-items: center;
-   font-size: ${px2vw(20)};
-   background-color: ${props => props.theme.color.primary_80};
-   padding: ${px2vw(13)};
-
-   .navbar1 {
-      margin-left: ${px2vw(134)};
-   }
-
-   .navbar2 {
-      margin-right: ${px2vw(52)};
-   }
-
-   ul {
-      display: flex;
-      align-items: center;
-      list-style: none;
-      gap: ${px2vw(32)};
-      margin: 0 ${px2vw(32)};
-   }
-
-   a {
-      text-decoration: none;
-      color: ${props => props.theme.color.secondary_80};
-   }
-
-   @media(min-width: 768px) {
-      display: flex;
-   }; 
-   
-   @media(min-width: 1120px) {
-      display: flex;
-   }
-   `;
-
-export const MobileNav = styled.nav<MenuButtonProps>`
-   background-color: ${props => props.theme.color.primary_80};
-   width: 100%;
-   padding: ${px2vw(32)} 0;
-
-   ul {
-      list-style: none;
-      height: 100%;
-      width: 100vw;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
-      font-size: 2rem;
-      background-color: ${props => props.theme.color.primary_80};
-   }
-
-   a {
-      text-decoration: none;
-      color: ${({ theme }) => theme.color.secondary_80};
-   }
-
-   @media(min-width: 768px) {
-      display: none;
-   };
-
-   ${({ isMenuOpen }) => {
-      if(isMenuOpen === true) {
-         return css`
-            ul {
-               position: fixed;
-            }
-         `;
-      } else {
-         return css`
-            ul {
-            display: none;
-         }
-         `
-      }
-   }}
+export const HeaderContainer = styled.header`
+  background-color: #0e0e0e;
+  display: flex;
+  height: 10vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  justify-content: space-between;
 `;
 
-export const MenuButton = styled.button`
-   background: transparent;
-   display: block;
-   border: 0;
-   padding: ${px2vw(8)};
-   cursor: pointer;
+export const Logo = styled(Image)`
+  background-color: transparent;
+  width: 45%;
+  height: auto;
 
-   &:hover {
-      transform: scale(1.05);
-   }
+  @media (min-width: 1024px) {
+    width: 20%;
+  }
+`;
 
-   &:active {
-      transform: scale(0.95);
-   }
-   @media(min-width: 768px) {
-      display: none;
-   }
+export const Buttons = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-between;
+  @media (min-width: 1024px) {
+    width: 20%;
+  }
+`;
+
+export const Button1 = styled(Button)`
+  width: 45%;
+  height: 6vh;
+  font-size: ${px2vw(8, 320)};
+  color: white;
+
+  @media (min-width: 768px) {
+    font-size: ${px2vw(10, 768)};
+  }
+
+  @media (min-width: 1024px) {
+    font-size: ${px2vw(10, 1024)};
+  }
+`;
+
+export const Button2 = styled(Button1)``;
+
+export const A = styled.a`
+background-color: transparent
 `

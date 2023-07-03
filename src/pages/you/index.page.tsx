@@ -1,4 +1,4 @@
-import Header from "@/components/Global/Header";
+import Header from "@/components/Global/header-extra";
 import {
    ContactForm,
    Container,
@@ -10,12 +10,13 @@ import {
    ResponsiveIframe,
 } from "./styles";
 import ExecutivosBanner from "@/components/Global/Banner";
-import Footer from "@/components/Global/Footer";
+import { FooterComponent } from "@/components/Global/Footer";
+import { HeaderComponent } from "@/components/Global/Header";
 
 export default function LPCompanies() {
    return (
       <Container>
-         <Header />
+         <HeaderComponent/>
          <Main>
             <ExecutivosBanner />
             <ForCompanies>
@@ -84,7 +85,7 @@ export default function LPCompanies() {
                </p>
             </Description>
          </Main>
-         <Footer />
+         <FooterComponent/>
       </Container>
    );
 }
