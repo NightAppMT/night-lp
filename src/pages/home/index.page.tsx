@@ -1,6 +1,5 @@
 import {
   Container,
-  Header,
   Main,
   Menu,
   ResponsiveIframe,
@@ -11,40 +10,21 @@ import {
   TextWithImg2,
   VideoSection,
 } from "./styles";
-import execLogo from "@/../public/generalLP/exec-logo.svg";
-import lines1 from "@/../public/generalLP/line-group-1.svg";
-import lines2 from "@/../public/generalLP/line-group-2.svg";
-import lines3 from "@/../public/generalLP/line-group-3.svg";
-import lines4 from "@/../public/generalLP/line-group-4.svg";
-import LandingPageForm from "@/components/Page/home/Form";
 import Image from "next/image";
 import Link from "next/link";
 
-import MenuIcon from "@/../public/generalLP/menu-button.svg";
 import Circle from "@/components/Page/home/Circle";
 import FormComponent from "@/components/Page/home/Form";
+import LpHeaderComponent from "@/components/Page/home/Header";
 
 export default function Home() {
   return (
     <Container>
-      <Header>
-        <Image
-          src={execLogo}
-          width={84}
-          height={84}
-          alt="Logo Executivo's Digital"
-        />
-        <nav>
-          <Link href={"#"}>QUEM SOMOS</Link>
-          <Link href={"#"}>EXECUTADOS</Link>
-          <Link href={"#"}>FALE CONOSCO</Link>
-        </nav>
-      </Header>
-
+      <LpHeaderComponent/>
       <Main>
         <VideoSection>
           <div className="line1">
-            <Image src={lines1} width={1244} height={1027} alt="" />
+            <Image src={'/lineGroup1.svg'} width={1244} height={1027} alt="" />
           </div>
           <ResponsiveIframe>
             <iframe
@@ -60,9 +40,10 @@ export default function Home() {
             <FormComponent />
           </div>
         </VideoSection>
+
         <Section2>
           <div className="line2">
-            <Image src={lines2} width={1244} height={1179} alt="" />
+            <Image src={'/lineGroup2.svg'} width={1244} height={1179} alt="" />
           </div>
           <div className="section-2-content">
             <Image
@@ -113,13 +94,13 @@ export default function Home() {
 
         <Section3>
           <div className="line3">
-            <Image src={lines3} width={1244} height={1179} alt="" />
+            <Image src={'/lineGroup3.svg'} width={1244} height={1179} alt="" />
           </div>
 
           <Menu>
             <Link href={"#"}>
               <Image
-                src={MenuIcon}
+                src={'/menuIcon.svg'}
                 width={55}
                 height={55}
                 alt="Ícone do Menu"
@@ -128,7 +109,7 @@ export default function Home() {
             </Link>
             <Link href={"#"}>
               <Image
-                src={MenuIcon}
+                src={'/menuIcon.svg'}
                 width={55}
                 height={55}
                 alt="Ícone do Menu"
@@ -137,7 +118,7 @@ export default function Home() {
             </Link>
             <Link href={"#"}>
               <Image
-                src={MenuIcon}
+                src={'/menuIcon.svg'}
                 width={55}
                 height={55}
                 alt="Ícone do Menu"
@@ -146,7 +127,7 @@ export default function Home() {
             </Link>
             <Link href={"#"}>
               <Image
-                src={MenuIcon}
+                src={'/menuIcon.svg'}
                 width={55}
                 height={55}
                 alt="Ícone do Menu"
@@ -165,7 +146,7 @@ export default function Home() {
 
         <Section4>
           <div className="line4">
-            <Image src={lines4} width={1244} height={1179} alt="" />
+            <Image src={'/lineGroup4.svg'} width={1244} height={1179} alt="" />
           </div>
 
           <div className="section-4-content">
@@ -216,19 +197,7 @@ export default function Home() {
           </div>
         </Section4>
       </Main>
-      <Header>
-        <Image
-          src={execLogo}
-          width={84}
-          height={84}
-          alt="Logo Executivo's Digital"
-        />
-        <nav>
-          <Link href={"#"}>QUEM SOMOS</Link>
-          <Link href={"#"}>EXECUTADOS</Link>
-          <Link href={"#"}>FALE CONOSCO</Link>
-        </nav>
-      </Header>
+      <LpHeaderComponent/>
     </Container>
   );
 }
