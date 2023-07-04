@@ -20,11 +20,11 @@ import LpHeaderComponent from "@/components/Page/home/Header";
 export default function Home() {
   return (
     <Container>
-      <LpHeaderComponent/>
+      <LpHeaderComponent />
       <Main>
         <VideoSection>
           <div className="line1">
-            <Image src={'/lineGroup1.svg'} width={1244} height={1027} alt="" />
+            <Image src={"/lineGroup1.svg"} width={1244} height={1027} alt="" />
           </div>
           <ResponsiveIframe>
             <iframe
@@ -43,7 +43,7 @@ export default function Home() {
 
         <Section2>
           <div className="line2">
-            <Image src={'/lineGroup2.svg'} width={1244} height={1179} alt="" />
+            <Image src={"/lineGroup2.svg"} width={1244} height={1179} alt="" />
           </div>
           <div className="section-2-content">
             <Image
@@ -94,13 +94,13 @@ export default function Home() {
 
         <Section3>
           <div className="line3">
-            <Image src={'/lineGroup3.svg'} width={1244} height={1179} alt="" />
+            <Image src={"/lineGroup3.svg"} width={1244} height={1179} alt="" />
           </div>
 
           <Menu>
             <Link href={"#"}>
               <Image
-                src={'/menuIcon.svg'}
+                src={"/menuIcon.svg"}
                 width={55}
                 height={55}
                 alt="Ícone do Menu"
@@ -109,7 +109,7 @@ export default function Home() {
             </Link>
             <Link href={"#"}>
               <Image
-                src={'/menuIcon.svg'}
+                src={"/menuIcon.svg"}
                 width={55}
                 height={55}
                 alt="Ícone do Menu"
@@ -118,7 +118,7 @@ export default function Home() {
             </Link>
             <Link href={"#"}>
               <Image
-                src={'/menuIcon.svg'}
+                src={"/menuIcon.svg"}
                 width={55}
                 height={55}
                 alt="Ícone do Menu"
@@ -127,7 +127,7 @@ export default function Home() {
             </Link>
             <Link href={"#"}>
               <Image
-                src={'/menuIcon.svg'}
+                src={"/menuIcon.svg"}
                 width={55}
                 height={55}
                 alt="Ícone do Menu"
@@ -146,7 +146,7 @@ export default function Home() {
 
         <Section4>
           <div className="line4">
-            <Image src={'/lineGroup4.svg'} width={1244} height={1179} alt="" />
+            <Image src={"/lineGroup4.svg"} width={1244} height={1179} alt="" />
           </div>
 
           <div className="section-4-content">
@@ -197,7 +197,7 @@ export default function Home() {
           </div>
         </Section4>
       </Main>
-      <LpHeaderComponent/>
+      <LpHeaderComponent />
     </Container>
   );
 }

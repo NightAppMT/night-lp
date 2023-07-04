@@ -24,7 +24,7 @@ export default function FormComponent() {
     <Form>
       <div className="label-and-input">
         <label htmlFor="name">Nome</label>
-        <input type="text" name="name" id="name" />
+        <input type="text" name="name" id="name" required />
       </div>
 
       <div className="label-and-input">
@@ -35,16 +35,17 @@ export default function FormComponent() {
           id="phoneNumber"
           value={phoneNumber}
           onChange={phoneMask}
+          required
         />
       </div>
 
       <div className="label-and-input">
         <label htmlFor="email">Email</label>
-        <input type="email" name="email" id="email" />
+        <input type="email" name="email" id="email" required />
       </div>
 
       <div className="button-container">
-        <button type="submit">Enviar</button>
+        <button>Enviar</button>
       </div>
 
       <Circle top={16} left={16} />

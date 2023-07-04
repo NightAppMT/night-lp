@@ -53,7 +53,6 @@ export const ResponsiveIframe = styled.div`
   @media (min-width: 768px) {
     width: ${px2vw(880)};
     margin: 0 auto;
-    /* padding-top: ${px2vw(578, 1244)};  */
     iframe {
       height: ${px2vw(560)};
     }
