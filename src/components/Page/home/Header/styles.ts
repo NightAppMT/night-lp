@@ -7,11 +7,16 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: ${px2vw(16, 1244)} ${px2vw(110, 1244)} ${px2vw(10, 1244)};
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 ${px2vw(6)} ${px2vw(6)} rgba(0, 0, 0, 0.3);
 
   img {
-    width: ${px2vw(83, 1244)};
+    width: ${px2vw(150, 1244)};
     height: auto;
+  }
+  @media (min-width: 768px) {
+    img {
+      width: ${px2vw(80, 1244)};
+    }
   }
 
   nav {
@@ -28,6 +33,12 @@ export const Header = styled.header`
         background-color: ${(props) => props.theme.color.primary_100};
         color: #292336;
         padding: ${px2vw(14, 1244)} ${px2vw(11, 1244)};
+        &:hover {
+          scale: 1.03;
+        }
+        &:active {
+          scale: 0.97;
+        }
       }
     }
   }

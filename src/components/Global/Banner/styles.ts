@@ -4,7 +4,7 @@ import px2vw from "@/utils/size";
 export const BannerWrapper = styled.div`
    display: flex;
    justify-content: center;
-   padding: ${px2vw(175)} ${px2vw(32)} 0;
+   padding: 14vh ${px2vw(32)} 0;
 
    img {
       width: 100%;

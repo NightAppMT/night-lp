@@ -23,7 +23,7 @@ export default function LPCompanies() {
                <h1>PARA VOCÊ</h1>
                <ResponsiveIframe>
                   <iframe
-                     src="https://www.youtube.com/embed/0zl72thBKzo"
+                     src="https://www.youtube.com/embed/0zl72thBKzo?autoplay=1&mute=1"
                      title="YouTube video player"
                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                      allowFullScreen

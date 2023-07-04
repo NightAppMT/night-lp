@@ -74,7 +74,7 @@ export function HeaderComponent() {
           expand="xl"
           bg={"primary"}
           collapseOnSelect
-          style={{ display: "flex" }}
+          style={{ display: "flex",}}
         >
           <Container
             fluid

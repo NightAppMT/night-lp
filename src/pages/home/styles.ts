@@ -1,5 +1,5 @@
-import { styled } from "styled-components";
 import px2vw from "@/utils/size";
+import { styled } from "styled-components";
 
 interface ContainerProps {
   type: boolean;
@@ -7,9 +7,6 @@ interface ContainerProps {
 
 export const Container = styled.div`
   overflow: hidden;
-  h1 {
-    background-color: red;
-  }
 `;
 
 export const Main = styled.main`
@@ -17,12 +14,7 @@ export const Main = styled.main`
 `;
 
 export const VideoSection = styled.section`
-  height: ${px2vw(1027, 1244)};
-  padding-bottom: 6.47%;
-  @media (min-width: 768px) {
-    padding-bottom: 7.11%;
-  }
-
+  height: ${px2vw(1027.41, 1244)};
   .line1 {
     overflow: hidden;
     width: 100%;
@@ -69,7 +61,7 @@ export const ResponsiveIframe = styled.div`
 `;
 
 export const Section2 = styled.section`
-  height: ${px2vw(700, 1244)};
+  height: ${px2vw(696, 1244)};
   .line2 {
     overflow: hidden;
     width: 100%;
@@ -144,6 +136,7 @@ export const TextWithImg = styled.div`
       grid-area: image;
       width: ${px2vw(111, 1244)};
       height: ${px2vw(138, 1244)};
+      object-fit: cover;
       align-self: center;
       margin: 0 ${px2vw(40, 1244)} 0 ${px2vw(55, 1244)};
     }
@@ -166,13 +159,12 @@ export const TextWithImg = styled.div`
 `;
 
 export const Section3 = styled.section`
-  height: ${px2vw(500, 1244)};
+  height: ${px2vw(499.82, 1244)};
   .line3 {
     overflow: hidden;
     width: 100%;
     background-color: ${(props) => props.theme.color.primary_80};
     position: absolute;
-    top: ${px2vw(1724, 1244)};
     z-index: -1;
     img {
       width: ${px2vw(1244, 1244)};
@@ -203,9 +195,8 @@ export const Section3 = styled.section`
 export const Menu = styled.div`
   display: flex;
   justify-content: center;
-  margin: ${px2vw(-55, 1244)} 0 ${px2vw(54, 1244)};
-  /* position: relative; */
-  /* bottom: ${px2vw(55, 1244)}; */
+  top: -4.5vw;
+  position: relative;
 
   a {
     display: flex;
@@ -231,7 +222,7 @@ export const Menu = styled.div`
 `;
 
 export const Section4 = styled.section`
-  height: ${px2vw(696, 1244)};
+  height: ${px2vw(699.75, 1244)};
   .line4 {
     overflow: hidden;
     width: 100%;
@@ -303,6 +294,7 @@ export const TextWithImg2 = styled.div`
       grid-area: image;
       width: ${px2vw(111, 1244)};
       height: ${px2vw(138, 1244)};
+      object-fit: cover;
       align-self: center;
       margin: 0 ${px2vw(55, 1244)} 0 ${px2vw(55, 1244)};
     }
