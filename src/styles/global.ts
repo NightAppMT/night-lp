@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
   };
 
   :root {
-      font-size: ${px2vw(24)};
+      font-size: ${px2vw(20)};
 
       @media (min-width: 768px) {
         font-size: ${px2vw(18)};

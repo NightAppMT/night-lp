@@ -1,4 +1,3 @@
-import Header from "@/components/Global/header-extra";
 import {
    ContactForm,
    Container,
@@ -10,7 +9,7 @@ import {
    ResponsiveIframe,
 } from "./styles";
 import ExecutivosBanner from "@/components/Global/Banner";
-import Footer from "@/components/Global/footer-extra";
+import ContactFormComponent from "@/components/Global/ContactForm";
 import { FooterComponent } from "@/components/Global/Footer";
 import { HeaderComponent } from "@/components/Global/Header";
 
@@ -34,24 +33,7 @@ export default function LPCompanies() {
                </ResponsiveIframe>
             </ForCompanies>
 
-            <ContactForm>
-               <h2>QUER FALAR DIRETAMENTE CONOSCO?</h2>
-               <h2>INSIRA SEUS DADOS:</h2>
-               <Form>
-                  <FormInput>
-                     <label htmlFor="name">NOME</label>
-                     <input type="text" name="name" id="name" />
-                  </FormInput>
-                  <FormInput>
-                     <label htmlFor="phoneNumber">TELEFONE</label>
-                     <input type="tel" name="phoneNumber" id="phoneNumber" />
-                  </FormInput>
-                  <FormInput>
-                     <label htmlFor="email">SEU MELHOR EMAIL</label>
-                     <input type="email" name="email" id="email" />
-                  </FormInput>
-               </Form>
-            </ContactForm>
+            <ContactFormComponent/>
 
             <Description>
                <p>
