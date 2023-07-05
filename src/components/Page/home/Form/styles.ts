@@ -5,7 +5,7 @@ export const Form = styled.form`
   position: relative;
   display: flex;
   justify-content: space-between;
-  gap: ${px2vw(64, 1244)};
+  /* gap: ${px2vw(64, 1244)}; */
   padding: ${px2vw(46, 1244)} ${px2vw(30, 1244)};
   background-color: ${(props) => props.theme.color.secondary_60};
   box-shadow: ${px2vw(10)} ${px2vw(10)} 2px rgba(0, 0, 0, 0.4);
@@ -15,12 +15,12 @@ export const Form = styled.form`
     flex-direction: column;
 
     label {
-      font-size: 1.1rem;
+      font-size: 1.8rem;
       color: white;
     }
     input {
-      font-size: 1.3rem;
-      width: ${px2vw(154, 1244)};
+      font-size: 2rem;
+      width: ${px2vw(200, 1244)};
       border: 0;
       box-shadow: ${px2vw(5)} ${px2vw(5)} 5px rgba(0, 0, 0, 0.6);
       &:focus {
@@ -30,7 +30,16 @@ export const Form = styled.form`
   }
   margin: 0 10vw 0;
   @media (min-width: 768px) {
-    margin: 0 15vw 0;
+    margin: 0 10vw 0;
+
+    .label-and-input {
+      label {
+        font-size: 1.1rem;
+      }
+      input {
+         font-size: 1.3rem;
+      }
+    }
   }
 
   .button-container {

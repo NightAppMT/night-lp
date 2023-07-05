@@ -61,6 +61,9 @@ export const ResponsiveIframe = styled.div`
 
 export const Section2 = styled.section`
   height: ${px2vw(696, 1244)};
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   .line2 {
     overflow: hidden;
     width: 100%;
@@ -74,14 +77,11 @@ export const Section2 = styled.section`
       height: auto;
     }
   }
-  @media (min-width: 768px) {
-    padding-bottom: ${px2vw(141, 1244.3)};
-  }
 
   .section-2-content {
-    padding: ${px2vw(111, 1244)} ${px2vw(111, 1244)} 0;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
     align-items: flex-end;
   }
 
@@ -115,7 +115,7 @@ export const TextWithImg = styled.div`
 
   .content {
     position: relative;
-    width: ${px2vw(577, 1244)};
+    width: ${px2vw(620, 1244)};
     display: grid;
     grid-template-areas:
       "image title"
@@ -123,7 +123,7 @@ export const TextWithImg = styled.div`
 
     color: white;
     background-color: ${(props) => props.theme.color.secondary_60};
-    box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: ${px2vw(10, 1244)} ${px2vw(10, 1244)} 3px rgba(0, 0, 0, 0.4);
 
     h3 {
       font-weight: bold;
@@ -143,15 +143,24 @@ export const TextWithImg = styled.div`
       text-align: end;
       margin-right: ${px2vw(50, 1244)};
       strong {
+        font-size: 1.4rem;
         margin-top: ${px2vw(21, 1244)};
       }
       p {
         font-weight: normal;
-        font-size: ${px2vw(14, 1244)};
+        font-size: 1.3rem;
         margin-top: ${px2vw(24, 1244)};
         &:last-child {
           margin-bottom: ${px2vw(43, 1244)};
         }
+      }
+    }
+    @media (min-width: 768px) {
+      strong {
+        font-size: 1.1rem;
+      }
+      p {
+        font-size: 1rem;
       }
     }
   }
@@ -222,6 +231,10 @@ export const Menu = styled.div`
 
 export const Section4 = styled.section`
   height: ${px2vw(699.75, 1244)};
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
   .line4 {
     overflow: hidden;
     width: 100%;
@@ -235,9 +248,9 @@ export const Section4 = styled.section`
     }
   }
   .section-4-content {
-    padding: ${px2vw(111, 1244)} ${px2vw(111, 1244)} 0;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
     align-items: flex-end;
   }
 
@@ -272,7 +285,7 @@ export const TextWithImg2 = styled.div`
 
   .content {
     position: relative;
-    width: ${px2vw(577, 1244)};
+    width: ${px2vw(620, 1244)};
     display: grid;
     grid-template-areas:
       "title image"
@@ -280,7 +293,7 @@ export const TextWithImg2 = styled.div`
 
     color: white;
     background-color: ${(props) => props.theme.color.secondary_60};
-    box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: ${px2vw(10, 1244)} ${px2vw(10, 1244)} 3px rgba(0, 0, 0, 0.4);
 
     h3 {
       font-weight: bold;
@@ -300,14 +313,24 @@ export const TextWithImg2 = styled.div`
     .text {
       margin-left: ${px2vw(50, 1244)};
       strong {
+         font-size: 1.4rem;
         margin-top: ${px2vw(21, 1244)};
       }
       p {
         font-weight: normal;
+        font-size: 1.3rem;
         margin-top: ${px2vw(24, 1244)};
         &:last-child {
           margin-bottom: ${px2vw(43, 1244)};
         }
+      }
+    }
+    @media (min-width: 768px) {
+      strong {
+        font-size: 1.1rem;
+      }
+      p {
+        font-size: 1rem;
       }
     }
   }

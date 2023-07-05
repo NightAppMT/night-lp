@@ -24,7 +24,7 @@ export const Header = styled.header`
     align-items: center;
     gap: ${px2vw(70, 1244)};
     a {
-      font-size: 1.1rem;
+      font-size: 1.5rem;
       font-weight: bold;
       text-decoration: none;
       color: white;
@@ -40,6 +40,10 @@ export const Header = styled.header`
           scale: 0.97;
         }
       }
+    }
+
+    @media(min-width: 768px) {
+      font-size: 1.1rem;
     }
   }
 `;
