@@ -52,8 +52,10 @@ export const Buttons = styled.div`
 
 export const Button1 = styled(Button)`
   width: 45%;
-  height: 6vh;
+  padding: ${px2vw(15)};
+  border-radius: ${px2vw(12)};
   font-size: ${px2vw(8, 320)};
+  font-weight: 600;
   color: white;
 
   @media (min-width: 768px) {
@@ -65,7 +67,15 @@ export const Button1 = styled(Button)`
   }
 `;
 
-export const Button2 = styled(Button1)``;
+export const Button2 = styled(Button1)`
+   background-color: ${props => props.theme.color.primary_80};
+   color: black;
+
+   &:hover {
+      background-color: black;
+      color: white;
+   }
+`;
 
 export const A = styled.a`
   background-color: transparent;

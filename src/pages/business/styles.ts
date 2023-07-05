@@ -12,7 +12,7 @@ export const ForCompanies = styled.section`
       font-size: 2.5rem;
       font-weight: bold;
       color: ${(props) => props.theme.color.primary_80};
-      margin: ${px2vw(24)} 0 ${px2vw(46)} ${px2vw(60)};
+      margin: ${px2vw(80)} 0 ${px2vw(46)} ${px2vw(60)};
    }
    h2 {
       display: flex;
