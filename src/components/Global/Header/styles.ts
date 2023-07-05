@@ -41,20 +41,20 @@ export const Logo = styled(Image)`
 export const Buttons = styled.div`
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 40%;
   background-color: transparent;
   align-items: center;
   justify-content: space-between;
   @media (min-width: 1024px) {
-    width: 20%;
+    width: 15%;
   }
 `;
 
 export const Button1 = styled(Button)`
   width: 45%;
-  padding: ${px2vw(15)};
-  border-radius: ${px2vw(12)};
-  font-size: ${px2vw(8, 320)};
+  padding: ${px2vw(10)} 0;
+  border-radius: ${px2vw(9)};
+  font-size: ${px2vw(7, 320)};
   font-weight: 600;
   color: white;
 
@@ -63,7 +63,7 @@ export const Button1 = styled(Button)`
   }
 
   @media (min-width: 1024px) {
-    font-size: ${px2vw(10, 1024)};
+    font-size: ${px2vw(12)};
   }
 `;
 
@@ -72,7 +72,7 @@ export const Button2 = styled(Button1)`
    color: black;
 
    &:hover {
-      background-color: black;
+      background-color: ${props => props.theme.color.secondary_100};
       color: white;
    }
 `;
