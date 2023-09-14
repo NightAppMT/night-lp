@@ -72,7 +72,8 @@ export const Section2 = styled.section`
     top: ${px2vw(1028, 1244)};
     z-index: -1;
     img {
-      width: ${px2vw(750, 1244)};
+      /* width: ${px2vw(750, 1244)}; */
+      object-fit: contain;
       margin-left: ${px2vw(243, 1244)};
       height: auto;
     }
@@ -86,9 +87,10 @@ export const Section2 = styled.section`
   }
 
   .sectionImg {
-    width: ${px2vw(333, 1244)};
+    width: auto;
+    border-radius: 10px;
     height: ${px2vw(444, 1244)};
-    object-fit: cover;
+    object-fit: contain;
     box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.4);
   }
 `;
@@ -101,7 +103,8 @@ export const TextWithImg = styled.div`
 
   .title {
     position: relative;
-    background-color: ${(props) => props.theme.color.primary_100};
+    background-color: #C759EC;
+    color: white;
     width: ${px2vw(360, 1244)};
     box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.4);
 
@@ -116,13 +119,10 @@ export const TextWithImg = styled.div`
   .content {
     position: relative;
     width: ${px2vw(620, 1244)};
-    display: grid;
-    grid-template-areas:
-      "image title"
-      "image text";
-
     color: white;
-    background-color: ${(props) => props.theme.color.secondary_60};
+    padding: 0.5rem;
+    text-align: justify;
+    background-color: #150029;
     box-shadow: ${px2vw(10, 1244)} ${px2vw(10, 1244)} 3px rgba(0, 0, 0, 0.4);
 
     h3 {
@@ -140,7 +140,7 @@ export const TextWithImg = styled.div`
       margin: 0 ${px2vw(40, 1244)} 0 ${px2vw(55, 1244)};
     }
     .text {
-      text-align: end;
+      text-align: justify;
       margin-right: ${px2vw(50, 1244)};
       strong {
         font-size: 1.4rem;
@@ -171,7 +171,7 @@ export const Section3 = styled.section`
   .line3 {
     overflow: hidden;
     width: 100%;
-    background-color: ${(props) => props.theme.color.primary_80};
+    background-color: #150029;
     position: absolute;
     z-index: -1;
     img {
@@ -187,10 +187,10 @@ export const Section3 = styled.section`
     position: relative;
     display: flex;
     margin: auto;
-    width: ${px2vw(256, 1244)};
+    width: ${px2vw(500, 1244)};
     justify-content: center;
     margin-bottom: ${px2vw(55, 1244)};
-    background-color: ${(props) => props.theme.color.blue_100};
+    background-color: #C759EC;
     h2 {
       color: white;
       font-size: 2.5rem;
@@ -212,15 +212,15 @@ export const Menu = styled.div`
     align-items: center;
     gap: ${px2vw(20)};
 
-    width: ${px2vw(255)};
+    width: ${px2vw(300)};
     height: ${px2vw(110, 1244)};
-    background-color: ${(props) => props.theme.color.secondary_20};
+    background-color: #C759EC;
     border: 1px solid black;
     box-shadow: inset -3px 0 5px rgba(0, 0, 0, 0.4);
 
     text-decoration: none;
     color: black;
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     img {
       width: ${px2vw(55, 1244)};
@@ -233,6 +233,7 @@ export const Section4 = styled.section`
   height: ${px2vw(699.75, 1244)};
   display: flex;
   justify-content: space-around;
+  background-color: white;
   align-items: center;
 
   .line4 {
@@ -270,10 +271,11 @@ export const TextWithImg2 = styled.div`
 
   .title {
     position: relative;
-    background-color: ${(props) => props.theme.color.blue_100};
+    background-color: #C759EC;
     color: white;
     width: ${px2vw(360, 1244)};
     box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.4);
+    margin: auto;
 
     h2 {
       font-size: 2.5rem;
@@ -285,45 +287,18 @@ export const TextWithImg2 = styled.div`
 
   .content {
     position: relative;
-    width: ${px2vw(620, 1244)};
+    width: 100%;
     display: grid;
-    grid-template-areas:
-      "title image"
-      "text image";
 
     color: white;
-    background-color: ${(props) => props.theme.color.secondary_60};
+    background-color: #150029;
     box-shadow: ${px2vw(10, 1244)} ${px2vw(10, 1244)} 3px rgba(0, 0, 0, 0.4);
 
     h3 {
       font-weight: bold;
-      grid-area: title;
-      margin: ${px2vw(32, 1244)} ${px2vw(40, 1244)} ${px2vw(21, 1244)} 0;
+      padding: 1rem;
       font-size: 2rem;
-      text-align: right;
-    }
-    img {
-      grid-area: image;
-      width: ${px2vw(111, 1244)};
-      height: ${px2vw(138, 1244)};
-      object-fit: cover;
-      align-self: center;
-      margin: 0 ${px2vw(55, 1244)} 0 ${px2vw(55, 1244)};
-    }
-    .text {
-      margin-left: ${px2vw(50, 1244)};
-      strong {
-         font-size: 1.4rem;
-        margin-top: ${px2vw(21, 1244)};
-      }
-      p {
-        font-weight: normal;
-        font-size: 1.3rem;
-        margin-top: ${px2vw(24, 1244)};
-        &:last-child {
-          margin-bottom: ${px2vw(43, 1244)};
-        }
-      }
+      text-align: center;
     }
     @media (min-width: 768px) {
       strong {
@@ -335,3 +310,14 @@ export const TextWithImg2 = styled.div`
     }
   }
 `;
+
+export const ImgContainer = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  padding: 3rem;
+
+  img {
+    width: ${px2vw(300)};
+    height: auto;
+  }
+`

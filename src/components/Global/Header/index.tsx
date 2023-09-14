@@ -64,7 +64,7 @@ export function HeaderComponent() {
     <div ref={main}>
       <MainHeaderContainer className="Header bold" ref={header}>
         <HeaderContainer>
-          <Logo src={"/logo.svg"} width={400} height={200} alt="" />
+          <Logo src={"/NightAppLogo.svg"} width={400} height={200} alt="" />
           <Buttons>
             <Button1 variant={"outline-primary"}>SOU ALUNO</Button1>
             <Button2 variant={"outline-primary"}>SOU CLIENTE</Button2>

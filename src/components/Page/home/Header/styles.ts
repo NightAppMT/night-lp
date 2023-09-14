@@ -2,7 +2,7 @@ import px2vw from "@/utils/size";
 import { styled } from "styled-components";
 
 export const Header = styled.header`
-  background-color: ${(props) => props.theme.color.secondary_60};
+  background-color: #150029;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,7 +15,8 @@ export const Header = styled.header`
   }
   @media (min-width: 768px) {
     img {
-      width: ${px2vw(80, 1244)};
+      width: ${px2vw(150, 1244)};
+      height: auto;
     }
   }
 
@@ -30,8 +31,8 @@ export const Header = styled.header`
       color: white;
 
       &:last-child {
-        background-color: ${(props) => props.theme.color.primary_100};
-        color: #292336;
+        background-color: #C759EC;
+        color: white;
         padding: ${px2vw(14, 1244)} ${px2vw(11, 1244)};
         &:hover {
           scale: 1.03;

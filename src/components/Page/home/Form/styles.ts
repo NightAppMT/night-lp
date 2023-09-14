@@ -5,9 +5,8 @@ export const Form = styled.form`
   position: relative;
   display: flex;
   justify-content: space-between;
-  /* gap: ${px2vw(64, 1244)}; */
   padding: ${px2vw(46, 1244)} ${px2vw(30, 1244)};
-  background-color: ${(props) => props.theme.color.secondary_60};
+  background-color: white;
   box-shadow: ${px2vw(10)} ${px2vw(10)} 2px rgba(0, 0, 0, 0.4);
 
   .label-and-input {
@@ -16,9 +15,10 @@ export const Form = styled.form`
 
     label {
       font-size: 1.8rem;
-      color: white;
+      /* color: bla; */
     }
     input {
+      background-color: #C759EC;
       font-size: 2rem;
       width: ${px2vw(200, 1244)};
       border: 0;
@@ -38,6 +38,7 @@ export const Form = styled.form`
       }
       input {
          font-size: 1.3rem;
+         padding: 0.2rem;
       }
     }
   }
@@ -48,7 +49,7 @@ export const Form = styled.form`
       font-size: ${px2vw(24, 1244)};
       font-weight: bold;
       color: white;
-      background-color: ${(props) => props.theme.color.blue_100};
+      background-color: #C759EC;
       padding: ${px2vw(16, 1244)} ${px2vw(40, 1244)};
       border: 0;
       box-shadow: ${px2vw(6)} ${px2vw(6)} 3px rgba(0, 0, 0, 0.6);
